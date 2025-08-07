@@ -1,9 +1,98 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CheckCircle, Phone, Mail, FileText, Settings, Wrench, BarChart, ArrowRight, Clock, Euro, ChevronDown, ChevronUp, Send } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const DotacePage: React.FC = () => {
+  // Add custom styles for smooth animations
+  React.useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      
+      .animate-slide-in-left {
+        animation: slideInLeft 0.8s ease-out forwards;
+      }
+      
+      .animate-slide-in-right {
+        animation: slideInRight 0.8s ease-out forwards;
+      }
+      
+      .animate-scale-in {
+        animation: scaleIn 0.8s ease-out forwards;
+      }
+      
+      .hover-lift {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .hover-lift:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      }
+      
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
+      .delay-400 { animation-delay: 400ms; }
+      .delay-500 { animation-delay: 500ms; }
+      .delay-600 { animation-delay: 600ms; }
+      .delay-700 { animation-delay: 700ms; }
+      .delay-800 { animation-delay: 800ms; }
+    `;
+    document.head.appendChild(style);
+    
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -13,9 +102,42 @@ const DotacePage: React.FC = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // Set up intersection observer for animations
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleElements(prev => new Set(prev.add(entry.target.id)));
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '-50px' }
+    );
+
+    // Use a timeout to ensure DOM elements are rendered
+    const setupObserver = () => {
+      const elements = document.querySelectorAll('[data-animate]');
+      elements.forEach(el => {
+        if (observerRef.current && el.id) {
+          observerRef.current.observe(el);
+        }
+      });
+    };
+    
+    // Set up observer after a short delay to ensure all elements are rendered
+    setTimeout(setupObserver, 100);
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
   }, []);
 
   const steps = [
@@ -23,25 +145,29 @@ const DotacePage: React.FC = () => {
       icon: FileText,
       title: 'Projektová a dotační příprava',
       description: 'Zanalyzujeme váš záměr a připravíme veškeré podklady. Zajistíme pasportizaci veřejného osvětlení, energetický posudek a světelně-technický projekt. Ověříme způsobilost a maximalizujeme vaše šance.',
-      color: 'from-citysound-green-500 to-citysound-green-600'
+      color: 'from-citysound-green-500 to-citysound-green-600',
+      image: '/nove-fotky-vyber-pridat/ikonka1-1krok.png'
     },
     {
       icon: Settings,
       title: 'Žádost a dotační management',
       description: 'Zkompletujeme a podáme žádost o dotaci vaším jménem. Postaráme se o veškerou administrativu a komunikaci s poskytovatelem dotace v průběhu schvalovacího procesu.',
-      color: 'from-citysound-blue-500 to-citysound-blue-600'
+      color: 'from-citysound-blue-500 to-citysound-blue-600',
+      image: '/nove-fotky-vyber-pridat/ikonka-krok2.png'
     },
     {
       icon: Wrench,
       title: 'Kompletní realizace',
       description: 'Po schválení dotace převezmeme kompletní realizaci. Díky vlastní technice a zkušenému týmu provedeme zemní práce, pokládku kabeláže, montáž sloupů i moderních LED svítidel.',
-      color: 'from-citysound-red-500 to-citysound-red-600'
+      color: 'from-citysound-red-500 to-citysound-red-600',
+      image: '/nove-fotky-vyber-pridat/ikonka3-krok3.png'
     },
     {
       icon: BarChart,
       title: 'Administrace a podotační servis',
       description: 'Zajistíme finální vyúčtování, doložení všech dokumentů pro proplacení dotace a kompletní podotační management. Jsme váš partner po celou dobu udržitelnosti projektu.',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-purple-500 to-purple-600',
+      image: '/nove-fotky-vyber-pridat/ikonka-krok4.png'
     }
   ];
 
@@ -102,7 +228,12 @@ const DotacePage: React.FC = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-citysound-green-50 via-white to-citysound-blue-50 relative overflow-hidden">
+      <section 
+        id="hero" 
+        data-animate 
+        className={`pt-32 pb-20 bg-gradient-to-br from-citysound-green-50 via-white to-citysound-blue-50 relative overflow-hidden transition-all duration-1000 ${
+          visibleElements.has('hero') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-citysound-green-600 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-citysound-blue-600 rounded-full blur-3xl"></div>
@@ -158,7 +289,13 @@ const DotacePage: React.FC = () => {
       {/* Animated Process Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
+          <div 
+            id="process-header" 
+            data-animate 
+            className={`text-center mb-16 transition-all duration-1000 ${
+              visibleElements.has('process-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Od prvotní myšlenky k rozsvícené obci ve 4 krocích
             </h2>
@@ -167,41 +304,103 @@ const DotacePage: React.FC = () => {
             </p>
           </div>
           
-          <div className="max-w-6xl mx-auto">
-            {steps.map((step, index) => (
-              <div 
-                key={index} 
-                className="flex items-center mb-12 last:mb-0 animate-slide-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className={`flex-shrink-0 w-20 h-20 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center shadow-lg`}>
-                  <step.icon className="w-10 h-10 text-white" />
-                </div>
-                <div className="ml-8 flex-1">
-                  <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                      Krok {index + 1}: {step.title}
-                    </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      {step.description}
-                    </p>
+          <div className="max-w-7xl mx-auto">
+            {steps.map((step, index) => {
+              const isEven = index % 2 === 0;
+              const stepId = `step-${index + 1}`;
+              
+              return (
+                <div 
+                  key={index} 
+                  id={stepId}
+                  data-animate
+                  className={`mb-20 last:mb-0 transition-all duration-1000 delay-${index * 200} ${
+                    visibleElements.has(stepId) 
+                      ? 'opacity-100 translate-y-0 scale-100' 
+                      : 'opacity-0 translate-y-16 scale-95'
+                  }`}
+                >
+                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${
+                    isEven ? '' : 'lg:grid-flow-dense'
+                  }`}>
+                    {/* Image */}
+                    <div className={`flex items-center justify-center ${
+                      isEven ? 'lg:order-2' : 'lg:order-1'
+                    }`}>
+                      <div className="relative group transform group-hover:scale-105 transition-all duration-500">
+                        <img
+                          src={step.image}
+                          alt={`Ilustrace pro krok ${index + 1}: ${step.title}`}
+                          className="w-full h-auto max-w-md mx-auto"
+                        />
+                      </div>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className={`space-y-6 ${
+                      isEven ? 'lg:order-1' : 'lg:order-2'
+                    }`}>
+                      <div className="flex items-center space-x-4">
+                        <div className={`w-12 h-12 bg-gradient-to-br ${step.color} rounded-xl flex items-center justify-center shadow-lg`}>
+                          <step.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                          Krok {index + 1}
+                        </span>
+                      </div>
+                      
+                      <h3 className="text-3xl font-bold text-gray-800 leading-tight">
+                        {step.title}
+                      </h3>
+                      
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        {step.description}
+                      </p>
+                      
+                      {/* Progress indicator */}
+                      <div className="flex items-center space-x-2 pt-4">
+                        {steps.map((_, stepIndex) => (
+                          <div
+                            key={stepIndex}
+                            className={`h-2 rounded-full transition-all duration-500 ${
+                              stepIndex <= index 
+                                ? `bg-gradient-to-r ${step.color} w-8` 
+                                : 'bg-gray-200 w-4'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </div>
                   </div>
+                  
+                  {/* Connecting line */}
+                  {index < steps.length - 1 && (
+                    <div className="flex justify-center mt-16">
+                      <div className="w-0.5 h-16 bg-gradient-to-b from-gray-300 to-transparent opacity-30"></div>
+                    </div>
+                  )}
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute left-10 mt-24">
-                    <ArrowRight className="w-8 h-8 text-gray-300 transform rotate-90" />
-                  </div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Detailed Information Section */}
-      <section className="py-20 bg-gray-50">
+      <section 
+        id="info-section" 
+        data-animate 
+        className={`py-20 bg-gray-50 transition-all duration-1000 ${
+          visibleElements.has('info-section') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
+          <div 
+            id="info-header" 
+            data-animate 
+            className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+              visibleElements.has('info-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Vše, co potřebujete vědět o dotaci na rok 2025
             </h2>
@@ -209,7 +408,13 @@ const DotacePage: React.FC = () => {
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Left Column - Timeline */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div 
+              id="timeline-card" 
+              data-animate 
+              className={`bg-white rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-500 ${
+                visibleElements.has('timeline-card') ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-10 scale-95'
+              }`}
+            >
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                 <Clock className="w-6 h-6 text-citysound-green-600 mr-3" />
                 Časový harmonogram a výše podpory
@@ -255,7 +460,13 @@ const DotacePage: React.FC = () => {
             </div>
             
             {/* Right Column - Eligible Expenses */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div 
+              id="expenses-card" 
+              data-animate 
+              className={`bg-white rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-700 ${
+                visibleElements.has('expenses-card') ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-10 scale-95'
+              }`}
+            >
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                 <CheckCircle className="w-6 h-6 text-citysound-green-600 mr-3" />
                 Na co lze dotaci využít?
@@ -282,9 +493,20 @@ const DotacePage: React.FC = () => {
       </section>
 
       {/* Partnership Section */}
-      <section className="py-20 bg-white">
+      <section 
+        id="partnership-section" 
+        data-animate 
+        className={`py-20 bg-white transition-all duration-1000 ${
+          visibleElements.has('partnership-section') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
+          <div 
+            id="partnership-header" 
+            data-animate 
+            className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+              visibleElements.has('partnership-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Jeden partner, kompletní expertiza. Žádní subdodavatelé.
             </h2>
@@ -295,7 +517,13 @@ const DotacePage: React.FC = () => {
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Citysound */}
-            <div className="bg-gradient-to-br from-citysound-green-50 to-citysound-green-100 rounded-2xl p-8 shadow-lg">
+            <div 
+              id="citysound-card" 
+              data-animate 
+              className={`bg-gradient-to-br from-citysound-green-50 to-citysound-green-100 rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-500 hover:shadow-2xl hover:scale-105 ${
+                visibleElements.has('citysound-card') ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-10 -rotate-3'
+              }`}
+            >
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-citysound-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Wrench className="w-10 h-10 text-white" />
@@ -318,7 +546,13 @@ const DotacePage: React.FC = () => {
             </div>
             
             {/* Sunritek */}
-            <div className="bg-gradient-to-br from-citysound-blue-50 to-citysound-blue-100 rounded-2xl p-8 shadow-lg">
+            <div 
+              id="sunritek-card" 
+              data-animate 
+              className={`bg-gradient-to-br from-citysound-blue-50 to-citysound-blue-100 rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-700 hover:shadow-2xl hover:scale-105 ${
+                visibleElements.has('sunritek-card') ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 translate-x-10 rotate-3'
+              }`}
+            >
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-citysound-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FileText className="w-10 h-10 text-white" />
@@ -347,15 +581,32 @@ const DotacePage: React.FC = () => {
       </section>
 
       {/* Reference Project */}
-      <section className="py-20 bg-gradient-to-r from-citysound-green-600 to-citysound-blue-600">
+      <section 
+        id="reference-section" 
+        data-animate 
+        className={`py-20 bg-gradient-to-r from-citysound-green-600 to-citysound-blue-600 transition-all duration-1000 ${
+          visibleElements.has('reference-section') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
+          <div 
+            id="reference-header" 
+            data-animate 
+            className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+              visibleElements.has('reference-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Přes 150 úspěšných projektů mluví za nás
             </h2>
           </div>
           
-          <div className="max-w-6xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+          <div 
+            id="reference-card" 
+            data-animate 
+            className={`max-w-6xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8 transition-all duration-1000 delay-500 ${
+              visibleElements.has('reference-card') ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
+            }`}
+          >
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
@@ -387,9 +638,20 @@ const DotacePage: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section 
+        id="faq-section" 
+        data-animate 
+        className={`py-20 bg-gray-50 transition-all duration-1000 ${
+          visibleElements.has('faq-section') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
+          <div 
+            id="faq-header" 
+            data-animate 
+            className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+              visibleElements.has('faq-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Odpovědi na vaše otázky
             </h2>
@@ -397,7 +659,15 @@ const DotacePage: React.FC = () => {
           
           <div className="max-w-4xl mx-auto">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg mb-4 overflow-hidden">
+              <div 
+                key={index} 
+                id={`faq-${index}`}
+                data-animate
+                className={`bg-white rounded-xl shadow-lg mb-4 overflow-hidden transition-all duration-1000 hover:shadow-xl ${
+                  visibleElements.has(`faq-${index}`) ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-5 scale-98'
+                }`}
+                style={{ transitionDelay: `${500 + index * 100}ms` }}
+              >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
@@ -421,9 +691,20 @@ const DotacePage: React.FC = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section id="contact-form" className="py-20 bg-white">
+      <section 
+        id="contact-form" 
+        data-animate 
+        className={`py-20 bg-white transition-all duration-1000 ${
+          visibleElements.has('contact-form') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}>
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
+          <div 
+            id="cta-header" 
+            data-animate 
+            className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+              visibleElements.has('cta-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Nenechte si ujít příležitost pro rok 2025. Ozvěte se ještě dnes.
             </h2>
@@ -434,7 +715,13 @@ const DotacePage: React.FC = () => {
           
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-2xl p-8">
+            <div 
+              id="contact-form-card" 
+              data-animate 
+              className={`bg-gray-50 rounded-2xl p-8 transition-all duration-1000 delay-500 ${
+                visibleElements.has('contact-form-card') ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-10 scale-95'
+              }`}
+            >
               <h3 className="text-2xl font-bold text-gray-800 mb-6">
                 Kontaktní formulář pro dotace
               </h3>
@@ -542,7 +829,13 @@ const DotacePage: React.FC = () => {
             </div>
             
             {/* Contact Information */}
-            <div className="space-y-6">
+            <div 
+              id="contact-info-card" 
+              data-animate 
+              className={`space-y-6 transition-all duration-1000 delay-700 ${
+                visibleElements.has('contact-info-card') ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-10 scale-95'
+              }`}
+            >
               <h3 className="text-2xl font-bold text-gray-800 mb-6">
                 Kontaktní informace
               </h3>
