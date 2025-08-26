@@ -58,8 +58,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({
     {
       icon: Mail,
       title: 'E-mail',
-      value: 'CitySound@CitySound.cz',
-      href: 'mailto:CitySound@CitySound.cz',
+      value: 'citysound@citysound.cz',
+      href: 'mailto:citysound@citysound.cz',
       description: 'Odpovídáme do 24 hodin'
     },
     {
