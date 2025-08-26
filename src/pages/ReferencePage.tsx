@@ -153,7 +153,7 @@ const ReferencePage: React.FC = () => {
     municipalities: [
       { name: 'Prostřední Bečva', logoPath: '/loga%20obce/prostredni-becva.svg' },
       { name: 'Hutisko Solanec', logoPath: '/loga%20obce/Hutiskos.jpg', hasEmblem: true },
-      { name: 'Juřinka', logoPath: '/loga%20obce/jurinka.jpg', hasEmblem: true },
+      { name: 'Troubky', logoPath: '/loga%20obce/troubky.png', hasEmblem: true },
       { name: 'Valašské Meziříčí', logoPath: '/loga%20obce/Pro%20obrazovka-logo-valmez-pozitiv.png' },
       { name: 'Nový Hrozenkov', logoPath: '/loga%20obce/novy%20hrozenkov.jpg', hasEmblem: true },
       { name: 'Líšnice', logoPath: '/loga%20obce/lisnice2.png', hasEmblem: true }
