@@ -24,7 +24,6 @@ const ServicesSection: React.FC = () => {
       description: 'Specializujeme se na instalaci a údržbu rozhlasových systémů pro obce a veřejné prostory s moderní digitální technologií.',
       benefits: [
         'Digitální rozhlasové systémy',
-        'Krystalově čistý zvuk', 
         'Dálkové ovládání a monitoring',
         'Integrace s varovnými systémy'
       ],
