@@ -270,7 +270,7 @@ const ServicesPage: React.FC = () => {
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Nabízíme možnost přepravy 3,5 t - 8 t. Máme k dispozici 
-                vůz Fiat Talento a kontejnerový sklápěč DAF s možností různých typů kontejnerových nástaveb.
+                dodávkové vozy a kontejnerový sklápěč DAF s možností různých typů kontejnerových nástaveb.
               </p>
 
               <div className="space-y-4 mb-8">
