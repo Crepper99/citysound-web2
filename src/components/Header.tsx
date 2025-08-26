@@ -35,10 +35,10 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-citysound-green-600 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-CitySound-green-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">CS</span>
             </div>
-            <span className="text-xl font-bold text-gray-800">Citysound</span>
+            <span className="text-xl font-bold text-gray-800">CitySound</span>
           </Link>
 
           {/* Centered Desktop Navigation */}
@@ -51,8 +51,8 @@ const Header: React.FC = () => {
                     to={item.href}
                     className={`font-medium transition-colors duration-200 ${
                       location.pathname === item.href 
-                        ? 'text-citysound-green-600' 
-                        : 'text-gray-700 hover:text-citysound-green-600'
+                        ? 'text-CitySound-green-600' 
+                        : 'text-gray-700 hover:text-CitySound-green-600'
                     }`}
                   >
                     {item.label}
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
                   <a
                     key={item.label}
                     href={item.href}
-                    className="text-gray-700 hover:text-citysound-green-600 font-medium transition-colors duration-200"
+                    className="text-gray-700 hover:text-CitySound-green-600 font-medium transition-colors duration-200"
                   >
                     {item.label}
                   </a>
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
             {/* Phone */}
             <a
               href="tel:+420774456960"
-              className="flex items-center space-x-2 text-gray-700 hover:text-citysound-green-600 transition-colors"
+              className="flex items-center space-x-2 text-gray-700 hover:text-CitySound-green-600 transition-colors"
             >
               <Phone size={16} />
               <span className="text-sm font-medium">+420 774 456 960</span>
@@ -84,18 +84,18 @@ const Header: React.FC = () => {
             {/* Social Media */}
             <div className="flex items-center space-x-2">
               <a
-                href="https://www.facebook.com/citysoundsro"
+                href="https://www.facebook.com/CitySound"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-citysound-green-600 transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-CitySound-green-600 transition-colors"
               >
                 <Facebook size={16} />
               </a>
               <a
-                href="https://www.instagram.com/_citysound_"
+                href="https://www.instagram.com/_CitySound_"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-citysound-green-600 transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-CitySound-green-600 transition-colors"
               >
                 <Instagram size={16} />
               </a>
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
             {/* CTA Button */}
             <Link
               to="/kontakt"
-              className="group bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105 inline-block"
+              className="group bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105 inline-block"
             >
               <span className="flex items-center space-x-2">
                 <span>Nezávazně poptat</span>
@@ -133,8 +133,8 @@ const Header: React.FC = () => {
                     to={item.href}
                     className={`font-medium py-2 ${
                       location.pathname === item.href 
-                        ? 'text-citysound-green-600' 
-                        : 'text-gray-700 hover:text-citysound-green-600'
+                        ? 'text-CitySound-green-600' 
+                        : 'text-gray-700 hover:text-CitySound-green-600'
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
                   <a
                     key={item.label}
                     href={item.href}
-                    className="text-gray-700 hover:text-citysound-green-600 font-medium py-2"
+                    className="text-gray-700 hover:text-CitySound-green-600 font-medium py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -161,7 +161,7 @@ const Header: React.FC = () => {
                 </a>
                 <div className="flex items-center space-x-4 py-2">
                   <a
-                    href="https://www.facebook.com/citysoundsro"
+                    href="https://www.facebook.com/CitySound"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-gray-700"
@@ -170,7 +170,7 @@ const Header: React.FC = () => {
                     <span>Facebook</span>
                   </a>
                   <a
-                    href="https://www.instagram.com/_citysound_"
+                    href="https://www.instagram.com/_CitySound_"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-gray-700"
@@ -182,7 +182,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/kontakt"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="bg-citysound-red-600 text-white px-4 py-2 rounded-lg font-semibold text-sm mt-2 text-center inline-block"
+                  className="bg-CitySound-red-600 text-white px-4 py-2 rounded-lg font-semibold text-sm mt-2 text-center inline-block"
                 >
                   Nezávazně poptat
                 </Link>

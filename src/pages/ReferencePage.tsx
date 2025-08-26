@@ -219,16 +219,16 @@ const ReferencePage: React.FC = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-citysound-green-50 via-white to-citysound-blue-50 relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-CitySound-green-50 via-white to-CitySound-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-citysound-green-600 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-citysound-blue-600 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-CitySound-green-600 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-CitySound-blue-600 rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Naše práce <span className="text-citysound-green-600">mluví za nás</span>
+              Naše práce <span className="text-CitySound-green-600">mluví za nás</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
               Za více než dvě dekády v oboru jsme úspěšně realizovali stovky projektů pro města, společnosti, 
@@ -239,7 +239,7 @@ const ReferencePage: React.FC = () => {
           {/* Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
-              <div ref={counter1.elementRef} className="text-4xl md:text-5xl font-bold text-citysound-green-600 mb-2">
+              <div ref={counter1.elementRef} className="text-4xl md:text-5xl font-bold text-CitySound-green-600 mb-2">
                 {counter1.displayValue}
               </div>
               <div className="text-lg text-gray-600 font-medium">
@@ -247,7 +247,7 @@ const ReferencePage: React.FC = () => {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
-              <div ref={counter2.elementRef} className="text-4xl md:text-5xl font-bold text-citysound-green-600 mb-2">
+              <div ref={counter2.elementRef} className="text-4xl md:text-5xl font-bold text-CitySound-green-600 mb-2">
                 {counter2.displayValue}
               </div>
               <div className="text-lg text-gray-600 font-medium">
@@ -255,7 +255,7 @@ const ReferencePage: React.FC = () => {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
-              <div ref={counter3.elementRef} className="text-4xl md:text-5xl font-bold text-citysound-green-600 mb-2">
+              <div ref={counter3.elementRef} className="text-4xl md:text-5xl font-bold text-CitySound-green-600 mb-2">
                 {counter3.displayValue}
               </div>
               <div className="text-lg text-gray-600 font-medium">
@@ -283,7 +283,7 @@ const ReferencePage: React.FC = () => {
                 onClick={() => setActiveFilter(category)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === category
-                    ? 'bg-citysound-green-600 text-white shadow-lg'
+                    ? 'bg-CitySound-green-600 text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -315,7 +315,7 @@ const ReferencePage: React.FC = () => {
                   <h3 className="text-xl font-bold text-gray-800 mb-3">{project.title}</h3>
                   <p className="text-gray-600 font-medium mb-2">{project.client}</p>
                   <p className="text-gray-500 text-sm mb-3">{project.location} • {project.year}</p>
-                  <span className="inline-block bg-citysound-green-100 text-citysound-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-block bg-CitySound-green-100 text-CitySound-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     {project.category}
                   </span>
                 </div>
@@ -326,7 +326,7 @@ const ReferencePage: React.FC = () => {
       </section>
 
       {/* Regional Coverage Section */}
-      <section className="py-20 bg-gradient-to-r from-citysound-green-600 to-citysound-blue-600">
+      <section className="py-20 bg-gradient-to-r from-CitySound-green-600 to-CitySound-blue-600">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -374,7 +374,7 @@ const ReferencePage: React.FC = () => {
             {/* Municipalities */}
             <div className="animate-slide-up">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <MapPin className="w-6 h-6 text-citysound-green-600 mr-3" />
+                <MapPin className="w-6 h-6 text-CitySound-green-600 mr-3" />
                 Města a obce
               </h3>
               <div className="bg-white rounded-xl p-8 shadow-lg">
@@ -385,7 +385,7 @@ const ReferencePage: React.FC = () => {
                       className="group cursor-pointer"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-citysound-green-50 transition-colors duration-300 p-4">
+                      <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-CitySound-green-50 transition-colors duration-300 p-4">
                         <div className="logo-container">
                           {municipality.hasEmblem ? (
                             <div className="flex flex-col items-center space-y-1">
@@ -419,7 +419,7 @@ const ReferencePage: React.FC = () => {
             {/* Companies */}
             <div className="animate-slide-up">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <Building2 className="w-6 h-6 text-citysound-green-600 mr-3" />
+                <Building2 className="w-6 h-6 text-CitySound-green-600 mr-3" />
                 Stavební a průmyslové firmy
               </h3>
               <div className="bg-white rounded-xl p-8 shadow-lg">
@@ -430,7 +430,7 @@ const ReferencePage: React.FC = () => {
                       className="group cursor-pointer"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-citysound-green-50 transition-colors duration-300 p-4">
+                      <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-CitySound-green-50 transition-colors duration-300 p-4">
                         <div className="logo-container">
                           <img
                             src={company.logoPath}
@@ -522,14 +522,14 @@ const ReferencePage: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <User className="w-5 h-5 text-citysound-green-600 mr-3" />
+                    <User className="w-5 h-5 text-CitySound-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-gray-700">Klient: </span>
                       <span className="text-gray-600">{selectedProject.client}</span>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <MapPin className="w-5 h-5 text-citysound-green-600 mr-3" />
+                    <MapPin className="w-5 h-5 text-CitySound-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-gray-700">Lokalita: </span>
                       <span className="text-gray-600">{selectedProject.location}</span>
@@ -538,14 +538,14 @@ const ReferencePage: React.FC = () => {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Calendar className="w-5 h-5 text-citysound-green-600 mr-3" />
+                    <Calendar className="w-5 h-5 text-CitySound-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-gray-700">Rok: </span>
                       <span className="text-gray-600">{selectedProject.year}</span>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <Filter className="w-5 h-5 text-citysound-green-600 mr-3" />
+                    <Filter className="w-5 h-5 text-CitySound-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-gray-700">Typ projektu: </span>
                       <span className="text-gray-600">{selectedProject.projectType}</span>

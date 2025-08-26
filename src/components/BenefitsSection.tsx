@@ -37,7 +37,7 @@ const BenefitsSection: React.FC = () => {
     {
       name: 'Ing. Pavel Novák',
       position: 'Projektový manažer, STRABAG',
-      text: 'Citysound je náš dlouhodobý partner pro veřejné osvětlení. Oceňujeme jejich komplexní přístup a dodržování termínů.',
+      text: 'CitySound je náš dlouhodobý partner pro veřejné osvětlení. Oceňujeme jejich komplexní přístup a dodržování termínů.',
       rating: 5
     },
     {
@@ -54,7 +54,7 @@ const BenefitsSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Proč si vybrat Citysound?
+            Proč si vybrat CitySound?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Co nás odlišuje od konkurence a proč nám klienti důvěřují svoje projekty.
@@ -79,13 +79,13 @@ const BenefitsSection: React.FC = () => {
                 
                 {/* Floating Icon */}
                 <div className="relative z-10 w-16 h-16 bg-white/20 backdrop-blur-sm group-hover:bg-white/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300">
-                  <benefit.icon className="w-8 h-8 text-white group-hover:text-citysound-green-200" />
+                  <benefit.icon className="w-8 h-8 text-white group-hover:text-CitySound-green-200" />
                 </div>
               </div>
 
               {/* Content - Bottom Half */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-citysound-green-700 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-CitySound-green-700 transition-colors">
                   {benefit.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -97,8 +97,8 @@ const BenefitsSection: React.FC = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="bg-gradient-to-r from-citysound-green-50 to-citysound-green-100 border-2 border-citysound-green-200 rounded-2xl p-8 lg:p-12 shadow-lg">
-          <h3 className="text-2xl font-bold text-citysound-green-800 mb-8 text-center">
+        <div className="bg-gradient-to-r from-CitySound-green-50 to-CitySound-green-100 border-2 border-CitySound-green-200 rounded-2xl p-8 lg:p-12 shadow-lg">
+          <h3 className="text-2xl font-bold text-CitySound-green-800 mb-8 text-center">
             Co říkají naši klienti
           </h3>
           
@@ -106,7 +106,7 @@ const BenefitsSection: React.FC = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-citysound-green-200 animate-fade-in"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-CitySound-green-200 animate-fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 {/* Stars */}
@@ -123,8 +123,8 @@ const BenefitsSection: React.FC = () => {
 
                 {/* Author */}
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-citysound-green-100 rounded-full flex items-center justify-center mr-4">
-                    <Users className="w-6 h-6 text-citysound-green-600" />
+                  <div className="w-12 h-12 bg-CitySound-green-100 rounded-full flex items-center justify-center mr-4">
+                    <Users className="w-6 h-6 text-CitySound-green-600" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">{testimonial.name}</div>
@@ -140,15 +140,15 @@ const BenefitsSection: React.FC = () => {
         <div className="mt-16 text-center">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="flex items-center justify-center space-x-3">
-              <CheckCircle className="w-6 h-6 text-citysound-green-600" />
+              <CheckCircle className="w-6 h-6 text-CitySound-green-600" />
               <span className="text-gray-700 font-medium">Pojištění odpovědnosti</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <CheckCircle className="w-6 h-6 text-citysound-green-600" />
+              <CheckCircle className="w-6 h-6 text-CitySound-green-600" />
               <span className="text-gray-700 font-medium">Certifikovaní elektrikáři</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <CheckCircle className="w-6 h-6 text-citysound-green-600" />
+              <CheckCircle className="w-6 h-6 text-CitySound-green-600" />
               <span className="text-gray-700 font-medium">Záruka na všechny práce</span>
             </div>
           </div>

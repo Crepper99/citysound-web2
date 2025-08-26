@@ -218,7 +218,7 @@ const ContactPage: React.FC = () => {
                   <h3 style="margin: 0 0 10px 0; color: #1f2937; font-size: 18px; font-weight: 700;">CitySound s.r.o.</h3>
                   <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📍 Hranická 272, 757 01 Valašské Meziříčí</p>
                   <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📞 +420 774 456 960</p>
-                  <p style="margin: 0; color: #374151; font-weight: 600;">✉️ citysound@citysound.cz</p>
+                  <p style="margin: 0; color: #374151; font-weight: 600;">✉️ CitySound@CitySound.cz</p>
                 </div>
               `
             });
@@ -259,7 +259,7 @@ const ContactPage: React.FC = () => {
             <h3 style="margin: 0 0 10px 0; color: #1f2937; font-size: 18px; font-weight: 700;">CitySound s.r.o.</h3>
             <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📍 Hranická 272, 757 01 Valašské Meziříčí</p>
             <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📞 +420 774 456 960</p>
-            <p style="margin: 0; color: #374151; font-weight: 600;">✉️ citysound@citysound.cz</p>
+            <p style="margin: 0; color: #374151; font-weight: 600;">✉️ CitySound@CitySound.cz</p>
           </div>
         `
       });
@@ -345,8 +345,8 @@ const ContactPage: React.FC = () => {
     {
       icon: Mail,
       title: 'E-mail',
-      value: 'citysound@citysound.cz',
-      href: 'mailto:citysound@citysound.cz',
+      value: 'CitySound@CitySound.cz',
+      href: 'mailto:CitySound@CitySound.cz',
       description: 'Odpovídáme do 24 hodin'
     },
     {
@@ -377,17 +377,17 @@ const ContactPage: React.FC = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-citysound-green-50 via-white to-citysound-blue-50 relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-CitySound-green-50 via-white to-CitySound-blue-50 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-citysound-green-600 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-citysound-blue-600 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-CitySound-green-600 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-CitySound-blue-600 rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Máte projekt? <span className="text-citysound-green-600">Pojďme se bavit!</span>
+              Máte projekt? <span className="text-CitySound-green-600">Pojďme se bavit!</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
               Ozvěte se nám kdykoliv. První konzultace je zdarma a bez závazků. 
@@ -396,17 +396,17 @@ const ContactPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="tel:+420774456960"
-                className="bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+                className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
               >
                 <Phone className="w-5 h-5" />
                 <span>Zavolat +420 774 456 960</span>
               </a>
               <a
-                href="mailto:citysound@citysound.cz"
-                className="border-2 border-citysound-green-600 text-citysound-green-600 hover:bg-citysound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
+                href="mailto:CitySound@CitySound.cz"
+                className="border-2 border-CitySound-green-600 text-CitySound-green-600 hover:bg-CitySound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
               >
                 <Mail className="w-5 h-5" />
-                <span>citysound@citysound.cz</span>
+                <span>CitySound@CitySound.cz</span>
               </a>
             </div>
           </div>
@@ -435,7 +435,7 @@ const ContactPage: React.FC = () => {
                 
                 {isSubmitted ? (
                   <div className="text-center py-12">
-                    <CheckCircle className="w-16 h-16 text-citysound-green-600 mx-auto mb-4" />
+                    <CheckCircle className="w-16 h-16 text-CitySound-green-600 mx-auto mb-4" />
                     <h4 className="text-xl font-bold text-gray-800 mb-2">Děkujeme za vaši poptávku!</h4>
                     <p className="text-gray-600">Ozveme se vám do 24 hodin.</p>
                   </div>
@@ -453,7 +453,7 @@ const ContactPage: React.FC = () => {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                           placeholder="Jan Novák"
                         />
                       </div>
@@ -467,7 +467,7 @@ const ContactPage: React.FC = () => {
                           name="company"
                           value={formData.company}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                           placeholder="Název firmy nebo obce"
                         />
                       </div>
@@ -485,7 +485,7 @@ const ContactPage: React.FC = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                           placeholder="jan@firma.cz"
                         />
                       </div>
@@ -499,7 +499,7 @@ const ContactPage: React.FC = () => {
                           name="phone"
                           value={formData.phone}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                           placeholder="+420 123 456 789"
                         />
                       </div>
@@ -515,7 +515,7 @@ const ContactPage: React.FC = () => {
                         value={formData.subject}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Vyberte předmět dotazu</option>
                         {subjectOptions.map((option, index) => (
@@ -537,14 +537,14 @@ const ContactPage: React.FC = () => {
                         onChange={handleInputChange}
                         required
                         rows={4}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="Popište stručně váš projekt nebo požadavky..."
                       ></textarea>
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+                      className="w-full bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center justify-center space-x-2"
                     >
                       <Send size={20} />
                       <span>Odeslat zprávu</span>
@@ -571,15 +571,15 @@ const ContactPage: React.FC = () => {
                     className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                   >
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-citysound-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <info.icon className="w-6 h-6 text-citysound-green-600" />
+                      <div className="w-12 h-12 bg-CitySound-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <info.icon className="w-6 h-6 text-CitySound-green-600" />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-800 mb-1">{info.title}</h4>
                         {info.href !== '#' ? (
                           <a
                             href={info.href}
-                            className="text-lg font-medium text-citysound-green-600 hover:text-citysound-green-700 transition-colors"
+                            className="text-lg font-medium text-CitySound-green-600 hover:text-CitySound-green-700 transition-colors"
                           >
                             {info.value}
                           </a>
@@ -615,7 +615,7 @@ const ContactPage: React.FC = () => {
               {mapError ? (
                 <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
                   <div className="text-center text-gray-600">
-                    <MapPin className="w-16 h-16 mx-auto mb-4 text-citysound-green-600" />
+                    <MapPin className="w-16 h-16 mx-auto mb-4 text-CitySound-green-600" />
                     <p className="text-xl font-semibold mb-2">Chyba při načítání mapy</p>
                     <p className="text-lg text-gray-700 font-medium">Hranická 272, 757 01 Valašské Meziříčí</p>
                     <p className="text-sm text-gray-500 mt-2">Možnost osobní konzultace po předchozí domluvě</p>
@@ -624,7 +624,7 @@ const ContactPage: React.FC = () => {
                         href="https://mapy.cz/s/pukosahuvo" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-block bg-citysound-green-600 hover:bg-citysound-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+                        className="inline-block bg-CitySound-green-600 hover:bg-CitySound-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                       >
                         Zobrazit na Mapy.cz
                       </a>
@@ -636,7 +636,7 @@ const ContactPage: React.FC = () => {
                   {!mapLoaded && (
                     <div className="absolute inset-0 bg-gray-200 rounded-xl flex items-center justify-center z-10">
                       <div className="text-center text-gray-600">
-                        <div className="w-8 h-8 border-4 border-citysound-green-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                        <div className="w-8 h-8 border-4 border-CitySound-green-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                         <p className="text-lg font-medium">Načítání mapy...</p>
                       </div>
                     </div>

@@ -50,7 +50,7 @@ const ProcessSection: React.FC = () => {
         {/* Process Steps */}
         <div className="relative">
           {/* Connection Line - Desktop */}
-          <div className="hidden lg:block absolute top-24 left-0 w-full h-1 bg-gradient-to-r from-citysound-green-300 via-citysound-green-500 to-citysound-green-300"></div>
+          <div className="hidden lg:block absolute top-24 left-0 w-full h-1 bg-gradient-to-r from-CitySound-green-300 via-CitySound-green-500 to-CitySound-green-300"></div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
@@ -66,14 +66,14 @@ const ProcessSection: React.FC = () => {
                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-300"></div>
                     
                     {/* Icon in Top-Left Corner */}
-                    <div className="absolute top-4 left-4 z-10 w-12 h-12 bg-citysound-green-600 group-hover:bg-citysound-green-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+                    <div className="absolute top-4 left-4 z-10 w-12 h-12 bg-CitySound-green-600 group-hover:bg-CitySound-green-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300">
                       <step.icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
 
                   {/* Content - Bottom Half */}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-citysound-green-700 transition-colors">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-CitySound-green-700 transition-colors">
                       {step.title}
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed text-base">
@@ -84,7 +84,7 @@ const ProcessSection: React.FC = () => {
                     <ul className="space-y-2">
                       {step.details.map((detail, detailIndex) => (
                         <li key={detailIndex} className="flex items-start space-x-2 text-sm text-gray-600">
-                          <CheckCircle className="w-4 h-4 text-citysound-green-500 flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-4 h-4 text-CitySound-green-500 flex-shrink-0 mt-0.5" />
                           <span>{detail}</span>
                         </li>
                       ))}
@@ -95,7 +95,7 @@ const ProcessSection: React.FC = () => {
                 {/* Arrow - Mobile */}
                 {index < steps.length - 1 && (
                   <div className="lg:hidden flex justify-center mt-6 mb-2">
-                    <ArrowRight className="w-6 h-6 text-citysound-green-400" />
+                    <ArrowRight className="w-6 h-6 text-CitySound-green-400" />
                   </div>
                 )}
               </div>
@@ -105,7 +105,7 @@ const ProcessSection: React.FC = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-citysound-green-50 to-citysound-green-100 rounded-2xl p-8">
+          <div className="bg-gradient-to-r from-CitySound-green-50 to-CitySound-green-100 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Proč je náš přístup unikátní?
             </h3>
@@ -115,7 +115,7 @@ const ProcessSection: React.FC = () => {
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+              className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
             >
               Chci konzultaci zdarma
             </button>

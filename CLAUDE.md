@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Structure
 
-This is a CitySound website - a React/TypeScript application built with Vite. The main application code is located in `citysound-download/` directory.
+This is a CitySound website - a React/TypeScript application built with Vite.
 
 ### Architecture Overview
 
@@ -38,12 +38,6 @@ Pages are composed of section components:
 
 ## Development Commands
 
-Navigate to `citysound-download/` directory for all commands:
-
-```bash
-cd citysound-download
-```
-
 ### Essential Commands
 
 - `npm run dev` - Start development server
@@ -53,7 +47,6 @@ cd citysound-download
 
 ### Development Workflow
 
-1. All development should happen in the `citysound-download/` directory
-2. The project uses strict TypeScript configuration
-3. ESLint is configured for React hooks and refresh
-4. No test framework is currently configured
+1. The project uses strict TypeScript configuration
+2. ESLint is configured for React hooks and refresh
+3. No test framework is currently configured
