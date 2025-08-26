@@ -143,11 +143,11 @@ const ServicesPage: React.FC = () => {
                   <span className="font-bold text-CitySound-green-600">18 m</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
-                  <span className="font-medium text-gray-700">Stranivý dosah</span>
+                  <span className="font-medium text-gray-700">Stranový dosah</span>
                   <span className="font-bold text-CitySound-green-600">7,5 m</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
-                  <span className="font-medium text-gray-700">Nosnost koše</span>
+                  <span className="font-medium text-gray-700">Zatížení koše</span>
                   <span className="font-bold text-CitySound-green-600">200 kg</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
