@@ -163,7 +163,7 @@ const ReferencesSection: React.FC = () => {
           <div className="inline-flex items-center space-x-3 bg-CitySound-green-100 rounded-full px-6 py-3">
             <Award className="w-5 h-5 text-CitySound-green-600" />
             <span className="text-CitySound-green-800 font-semibold">
-              Certifikovaní elektrikáři s oprávněním pro revize
+              Certifikovaní elektrikáři s odbornou způsobilostí
             </span>
           </div>
         </div>
