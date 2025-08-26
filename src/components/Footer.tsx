@@ -110,10 +110,10 @@ const Footer: React.FC = () => {
                 <Mail className="w-5 h-5 text-CitySound-green-400 mt-0.5" />
                 <div>
                   <a
-                    href="mailto:CitySound@CitySound.cz"
+                    href="mailto:citysound@citysound.cz"
                     className="text-gray-300 hover:text-CitySound-green-400 transition-colors"
                   >
-                    CitySound@CitySound.cz
+                    citysound@citysound.cz
                   </a>
                   <p className="text-xs text-gray-400">Odpovídáme do 24h</p>
                 </div>
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
               <div className="mt-6 pt-6 border-t border-gray-700">
                 <div className="flex items-center space-x-4">
                   <a
-                    href="https://www.facebook.com/CitySound"
+                    href="https://www.facebook.com/CitySoundSRO"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-CitySound-green-400 transition-colors"

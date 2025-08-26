@@ -862,8 +862,8 @@ const DotacePage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Napište nám</h4>
-                    <a href="mailto:dotace@CitySound.cz" className="text-lg font-medium text-CitySound-blue-600 hover:text-CitySound-blue-700">
-                      dotace@CitySound.cz
+                    <a href="mailto:dotace@citysound.cz" className="text-lg font-medium text-CitySound-blue-600 hover:text-CitySound-blue-700">
+                      dotace@citysound.cz
                     </a>
                     <p className="text-sm text-gray-600">Odpovídáme do 24 hodin</p>
                   </div>

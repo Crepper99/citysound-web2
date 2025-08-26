@@ -84,7 +84,7 @@ const Header: React.FC = () => {
             {/* Social Media */}
             <div className="flex items-center space-x-2">
               <a
-                href="https://www.facebook.com/CitySound"
+                href="https://www.facebook.com/CitySoundSRO"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-CitySound-green-600 transition-colors"

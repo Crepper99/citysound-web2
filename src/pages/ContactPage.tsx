@@ -218,7 +218,7 @@ const ContactPage: React.FC = () => {
                   <h3 style="margin: 0 0 10px 0; color: #1f2937; font-size: 18px; font-weight: 700;">CitySound s.r.o.</h3>
                   <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📍 Hranická 272, 757 01 Valašské Meziříčí</p>
                   <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📞 +420 774 456 960</p>
-                  <p style="margin: 0; color: #374151; font-weight: 600;">✉️ CitySound@CitySound.cz</p>
+                  <p style="margin: 0; color: #374151; font-weight: 600;">✉️ citysound@citysound.cz</p>
                 </div>
               `
             });
@@ -259,7 +259,7 @@ const ContactPage: React.FC = () => {
             <h3 style="margin: 0 0 10px 0; color: #1f2937; font-size: 18px; font-weight: 700;">CitySound s.r.o.</h3>
             <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📍 Hranická 272, 757 01 Valašské Meziříčí</p>
             <p style="margin: 0 0 6px 0; color: #374151; font-weight: 600;">📞 +420 774 456 960</p>
-            <p style="margin: 0; color: #374151; font-weight: 600;">✉️ CitySound@CitySound.cz</p>
+            <p style="margin: 0; color: #374151; font-weight: 600;">✉️ citysound@citysound.cz</p>
           </div>
         `
       });
@@ -345,8 +345,8 @@ const ContactPage: React.FC = () => {
     {
       icon: Mail,
       title: 'E-mail',
-      value: 'CitySound@CitySound.cz',
-      href: 'mailto:CitySound@CitySound.cz',
+      value: 'citysound@citysound.cz',
+      href: 'mailto:citysound@citysound.cz',
       description: 'Odpovídáme do 24 hodin'
     },
     {
@@ -402,11 +402,11 @@ const ContactPage: React.FC = () => {
                 <span>Zavolat +420 774 456 960</span>
               </a>
               <a
-                href="mailto:CitySound@CitySound.cz"
+                href="mailto:citysound@citysound.cz"
                 className="border-2 border-CitySound-green-600 text-CitySound-green-600 hover:bg-CitySound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
               >
                 <Mail className="w-5 h-5" />
-                <span>CitySound@CitySound.cz</span>
+                <span>citysound@citysound.cz</span>
               </a>
             </div>
           </div>
@@ -606,7 +606,7 @@ const ContactPage: React.FC = () => {
               Kde nás najdete
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Naše firma sídlí v obci Oznice, odkud pokrýváme celou Moravskoslezskou oblast.
+              Naše firma sídlí ve Valašském Meziříčí, odkud pokrýváme celou Moravskoslezskou oblast.
             </p>
           </div>
           
