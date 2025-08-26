@@ -357,18 +357,18 @@ const ContactPage: React.FC = () => {
       description: 'Možnost osobní konzultace'
     },
     {
-      icon: MapPin,
-      title: 'Adresa sídla',
-      value: 'CitySound s.r.o., Oznice 101, 756 24 Bystřička',
-      href: 'https://mapy.com/s/hagedodato',
-      description: 'Oficiální adresa společnosti'
-    },
-    {
       icon: Clock,
       title: 'Pracovní doba',
       value: 'Po-Pá: 7:00-16:00',
       href: '#',
       description: 'Pro urgentní případy volejte kdykoliv'
+    },
+    {
+      icon: MapPin,
+      title: 'Adresa sídla',
+      value: 'CitySound s.r.o., Oznice 101, 756 24 Bystřička',
+      href: 'https://mapy.com/s/hagedodato',
+      description: 'Oficiální adresa společnosti'
     },
     {
       icon: Building,
