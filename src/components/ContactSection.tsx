@@ -64,7 +64,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
     },
     {
       icon: MapPin,
-      title: 'Adresa',
+      title: 'Adresa provozovny',
       value: 'Hranická 272, 757 01 Valašské Meziříčí',
       href: 'https://mapy.com/s/pukosahuvo',
       target: '_blank',

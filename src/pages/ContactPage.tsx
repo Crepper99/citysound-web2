@@ -351,10 +351,17 @@ const ContactPage: React.FC = () => {
     },
     {
       icon: MapPin,
-      title: 'Adresa sídla',
+      title: 'Adresa provozovny',
       value: 'CitySound s.r.o., Hranická 272, 757 01 Valašské Meziříčí',
       href: 'https://mapy.com/s/pukosahuvo',
       description: 'Možnost osobní konzultace'
+    },
+    {
+      icon: MapPin,
+      title: 'Adresa sídla',
+      value: 'CitySound s.r.o., Oznice 101, 756 24 Bystřička',
+      href: 'https://mapy.com/s/hagedodato',
+      description: 'Oficiální adresa společnosti'
     },
     {
       icon: Clock,
