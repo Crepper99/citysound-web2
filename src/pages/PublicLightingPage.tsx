@@ -16,28 +16,28 @@ const PublicLightingPage: React.FC = () => {
       title: 'Projekt & Konzultace',
       description: 'Na začátku si vyslechneme vaše potřeby a analyzujeme stávající stav. Navrhneme technicky i ekonomicky optimální řešení, včetně světelně-technického výpočtu a projektové dokumentace.',
       icon: Search,
-      color: 'bg-citysound-green-100 text-citysound-green-600'
+      color: 'bg-CitySound-green-100 text-CitySound-green-600'
     },
     {
       number: 2,
       title: 'Zemní Práce & NN Sítě',
       description: 'Disponujeme vlastní technikou pro výkopy a pokládku kabelových sítí nízkého napětí. Nemusíte tak čekat na dalšího dodavatele, vše probíhá plynule.',
       icon: Construction,
-      color: 'bg-citysound-green-100 text-citysound-green-600'
+      color: 'bg-CitySound-green-100 text-CitySound-green-600'
     },
     {
       number: 3,
       title: 'Montáž Stožárů a Svítidel',
       description: 'Pomocí naší montážní plošiny profesionálně instalujeme stožáry, výložníky a osazujeme moderní a úsporná LED svítidla od prověřených výrobců.',
       icon: Lightbulb,
-      color: 'bg-citysound-green-100 text-citysound-green-600'
+      color: 'bg-CitySound-green-100 text-CitySound-green-600'
     },
     {
       number: 4,
       title: 'Revize & Předání',
       description: 'Celé dílo odborně zapojíme, provedeme výchozí revizi a předáme vám plně funkční a bezpečné osvětlení s veškerou potřebnou dokumentací.',
       icon: CheckCircle,
-      color: 'bg-citysound-green-100 text-citysound-green-600'
+      color: 'bg-CitySound-green-100 text-CitySound-green-600'
     }
   ];
 
@@ -99,14 +99,14 @@ const PublicLightingPage: React.FC = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex items-center bg-gradient-to-br from-citysound-green-50 to-citysound-green-100 relative overflow-hidden">
+      <section className="min-h-[80vh] flex items-center bg-gradient-to-br from-CitySound-green-50 to-CitySound-green-100 relative overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div className="max-w-4xl">
               <div className="mb-8">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 animate-fade-in-up">
-                  Komplexní realizace <span className="text-citysound-green-600">
+                  Komplexní realizace <span className="text-CitySound-green-600">
                     veřejného osvětlení
                   </span>
                 </h1>
@@ -119,7 +119,7 @@ const PublicLightingPage: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-400">
                 <button
                   onClick={scrollToContact}
-                  className="bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+                  className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
                 >
                   <span className="flex items-center justify-center space-x-2">
                     <Lightbulb className="w-5 h-5 group-hover:animate-pulse" />
@@ -128,7 +128,7 @@ const PublicLightingPage: React.FC = () => {
                   </span>
                 </button>
                 <Link to="/reference">
-                  <button className="border-2 border-citysound-green-600 text-citysound-green-600 hover:bg-citysound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                  <button className="border-2 border-CitySound-green-600 text-CitySound-green-600 hover:bg-CitySound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                     Prohlédnout reference
                   </button>
                 </Link>
@@ -160,7 +160,7 @@ const PublicLightingPage: React.FC = () => {
                     <step.icon className="w-8 h-8" />
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm font-semibold text-citysound-green-600 mb-1">
+                    <div className="text-sm font-semibold text-CitySound-green-600 mb-1">
                       Krok {step.number}
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -177,7 +177,7 @@ const PublicLightingPage: React.FC = () => {
 
           {/* Result */}
           <div className="text-center">
-            <div className="inline-block bg-citysound-green-100 text-citysound-green-800 px-8 py-4 rounded-2xl font-bold text-lg border-2 border-citysound-green-200">
+            <div className="inline-block bg-CitySound-green-100 text-CitySound-green-800 px-8 py-4 rounded-2xl font-bold text-lg border-2 border-CitySound-green-200">
               ✓ Výsledek: Kompletní osvětlení bez starostí pro vás
             </div>
           </div>
@@ -201,18 +201,18 @@ const PublicLightingPage: React.FC = () => {
             {/* For Construction Companies */}
             <div className="rounded-2xl p-6" style={{backgroundColor: '#e3efff'}}>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-16 h-16 bg-citysound-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 bg-CitySound-blue-600 rounded-full flex items-center justify-center">
                   <HardHat className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">Pro Stavební Firmy</h3>
               </div>
-              <p className="text-lg text-citysound-blue-600 mb-6 font-semibold">
+              <p className="text-lg text-CitySound-blue-600 mb-6 font-semibold">
                 Spolehlivý subdodavatel pro vaše projekty
               </p>
               <ul className="space-y-3">
                 {constructionBenefits.map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-citysound-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-CitySound-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
@@ -222,18 +222,18 @@ const PublicLightingPage: React.FC = () => {
             {/* For Municipalities */}
             <div className="rounded-2xl p-6" style={{backgroundColor: '#dffbed'}}>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-16 h-16 bg-citysound-green-600 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 bg-CitySound-green-600 rounded-full flex items-center justify-center">
                   <Building2 className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">Pro Města a Obce</h3>
               </div>
-              <p className="text-lg text-citysound-green-600 mb-6 font-semibold">
+              <p className="text-lg text-CitySound-green-600 mb-6 font-semibold">
                 Moderní a bezpečné osvětlení pro vaše občany
               </p>
               <ul className="space-y-3">
                 {municipalityBenefits.map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-citysound-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-CitySound-green-600 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
@@ -281,7 +281,7 @@ const PublicLightingPage: React.FC = () => {
 
           <div className="text-center">
             <Link to="/reference">
-            <button className="border-2 border-citysound-green-600 text-citysound-green-600 hover:bg-citysound-green-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center space-x-2">
+            <button className="border-2 border-CitySound-green-600 text-CitySound-green-600 hover:bg-CitySound-green-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 inline-flex items-center space-x-2">
               <span>Zobrazit všechny reference</span>
               <ArrowRight size={20} />
             </button>

@@ -64,7 +64,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
     },
     {
       icon: MapPin,
-      title: 'Adresa',
+      title: 'Adresa provozovny',
       value: 'Hranická 272, 757 01 Valašské Meziříčí',
       href: 'https://mapy.com/s/pukosahuvo',
       target: '_blank',
@@ -103,7 +103,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
               
               {isSubmitted ? (
                 <div className="text-center py-12">
-                  <CheckCircle className="w-16 h-16 text-citysound-green-600 mx-auto mb-4" />
+                  <CheckCircle className="w-16 h-16 text-CitySound-green-600 mx-auto mb-4" />
                   <h4 className="text-xl font-bold text-gray-800 mb-2">Děkujeme za vaši poptávku!</h4>
                   <p className="text-gray-600">Ozveme se vám do 24 hodin.</p>
                 </div>
@@ -121,7 +121,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="Jan Novák"
                       />
                     </div>
@@ -135,7 +135,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="Název firmy nebo obce"
                       />
                     </div>
@@ -153,7 +153,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="jan@firma.cz"
                       />
                     </div>
@@ -167,7 +167,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="+420 123 456 789"
                       />
                     </div>
@@ -184,14 +184,14 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                       onChange={handleInputChange}
                       required
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                       placeholder="Popište stručně váš projekt nebo požadavky..."
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+                    className="w-full bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center justify-center space-x-2"
                   >
                     <Send size={20} />
                     <span>Odeslat poptávku</span>
@@ -218,15 +218,15 @@ const ContactSection: React.FC<ContactSectionProps> = ({
                   className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-citysound-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <info.icon className="w-6 h-6 text-citysound-green-600" />
+                    <div className="w-12 h-12 bg-CitySound-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <info.icon className="w-6 h-6 text-CitySound-green-600" />
                     </div>
                     <div className="flex-1">
                       <h4 className="font-semibold text-gray-800 mb-1">{info.title}</h4>
                       {info.href !== '#' ? (
                         <a
                           href={info.href}
-                          className="text-lg font-medium text-citysound-green-600 hover:text-citysound-green-700 transition-colors"
+                          className="text-lg font-medium text-CitySound-green-600 hover:text-CitySound-green-700 transition-colors"
                         >
                           {info.value}
                         </a>
@@ -241,12 +241,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({
             </div>
 
             {/* Quick CTA */}
-            <div className="mt-8 bg-gradient-to-r from-citysound-green-600 to-citysound-green-700 rounded-2xl p-6 text-white">
+            <div className="mt-8 bg-gradient-to-r from-CitySound-green-600 to-CitySound-green-700 rounded-2xl p-6 text-white">
               <h4 className="text-xl font-bold mb-2">Potřebujete rychlou odpověď?</h4>
               <p className="mb-4">Zavolejte nám přímo, rádi si s vámi promluvíme o vašem projektu.</p>
               <a
                 href="tel:+420774456960"
-                className="inline-block bg-white text-citysound-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="inline-block bg-white text-CitySound-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Zavolat +420 774 456 960
               </a>

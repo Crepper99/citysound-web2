@@ -71,11 +71,11 @@ const ServicesPage: React.FC = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-citysound-green-50 to-citysound-blue-50">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-CitySound-green-50 to-CitySound-blue-50">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Naše další <span className="text-citysound-green-600">služby a technika</span>
+              Naše další <span className="text-CitySound-green-600">služby a technika</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
               Kromě veřejného osvětlení nabízíme komplexní služby včetně pronájmu specializované techniky 
@@ -100,7 +100,7 @@ const ServicesPage: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-citysound-green-600 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-CitySound-green-600 rounded-full flex items-center justify-center">
                       <service.icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const ServicesPage: React.FC = () => {
             
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Práce s montážní plošinou <span className="text-citysound-green-600">Renault Maxity</span>
+                Práce s montážní plošinou <span className="text-CitySound-green-600">Renault Maxity</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Nabízíme pronájem plošiny na podvozku Renault Maxity - 3,5 t. 
@@ -140,25 +140,25 @@ const ServicesPage: React.FC = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
                   <span className="font-medium text-gray-700">Výškový dosah plošiny</span>
-                  <span className="font-bold text-citysound-green-600">18 m</span>
+                  <span className="font-bold text-CitySound-green-600">18 m</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
-                  <span className="font-medium text-gray-700">Stranivý dosah</span>
-                  <span className="font-bold text-citysound-green-600">7,5 m</span>
+                  <span className="font-medium text-gray-700">Stranový dosah</span>
+                  <span className="font-bold text-CitySound-green-600">7,5 m</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
-                  <span className="font-medium text-gray-700">Nosnost koše</span>
-                  <span className="font-bold text-citysound-green-600">200 kg</span>
+                  <span className="font-medium text-gray-700">Zatížení koše</span>
+                  <span className="font-bold text-CitySound-green-600">200 kg</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
                   <span className="font-medium text-gray-700">Hmotnost vozidla</span>
-                  <span className="font-bold text-citysound-green-600">3,5 t</span>
+                  <span className="font-bold text-CitySound-green-600">3,5 t</span>
                 </div>
               </div>
 
               <button
                 onClick={scrollToContact}
-                className="w-full bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
+                className="w-full bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
               >
                 Pronajmout montážní plošinu
               </button>
@@ -173,7 +173,7 @@ const ServicesPage: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Zemní práce minibagrem <span className="text-citysound-green-600">Kubota KX-019</span>
+                Zemní práce minibagrem <span className="text-CitySound-green-600">Kubota KX-019</span>
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Nabízíme pronájem minibagru Kubota KX-019 - 2t. Rybadlo je vybaveno lžicemi o šířce 25 mm, 40 mm 
@@ -183,25 +183,25 @@ const ServicesPage: React.FC = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
                   <span className="font-medium text-gray-700">Hmotnost</span>
-                  <span className="font-bold text-citysound-green-600">2 t</span>
+                  <span className="font-bold text-CitySound-green-600">2 t</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
                   <span className="font-medium text-gray-700">Hloubkový dosah</span>
-                  <span className="font-bold text-citysound-green-600">2680 mm</span>
+                  <span className="font-bold text-CitySound-green-600">2680 mm</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
                   <span className="font-medium text-gray-700">Výsypná výška</span>
-                  <span className="font-bold text-citysound-green-600">2560 mm</span>
+                  <span className="font-bold text-CitySound-green-600">2560 mm</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200">
                   <span className="font-medium text-gray-700">Šířka pásů (stavitelná)</span>
-                  <span className="font-bold text-citysound-green-600">990 - 1300 mm</span>
+                  <span className="font-bold text-CitySound-green-600">990 - 1300 mm</span>
                 </div>
               </div>
               
-              <div className="bg-citysound-green-50 p-4 rounded-lg mb-8">
-                <h4 className="font-semibold text-citysound-green-800 mb-2">Dostupné vybavení:</h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-citysound-green-700">
+              <div className="bg-CitySound-green-50 p-4 rounded-lg mb-8">
+                <h4 className="font-semibold text-CitySound-green-800 mb-2">Dostupné vybavení:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-CitySound-green-700">
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4" />
                     <span>Lžice 25 mm a 40 mm</span>
@@ -223,7 +223,7 @@ const ServicesPage: React.FC = () => {
 
               <button
                 onClick={scrollToContact}
-                className="w-full bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
+                className="w-full bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
               >
                 Objednat zemní práce
               </button>
@@ -266,31 +266,31 @@ const ServicesPage: React.FC = () => {
             
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                <span className="text-citysound-green-600">Autodoprava</span> a kontejnery
+                <span className="text-CitySound-green-600">Autodoprava</span> a kontejnery
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Nabízíme možnost přepravy 3,5 t - 8 t. Máme k dispozici 
-                vůz Fiat Talento a kontejnerový sklápěč DAF s možností různých typů kontejnerových nástaveb.
+                dodávkové vozy a kontejnerový sklápěč DAF s možností různých typů kontejnerových nástaveb.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-citysound-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-CitySound-green-600 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Fiat Talento - dodávkový vůz</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-citysound-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-CitySound-green-600 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">DAF - kontejnerový sklápěč</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-citysound-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-CitySound-green-600 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Různé typy kontejnerových nástaveb</span>
                 </div>
               </div>
 
               <button
                 onClick={scrollToContact}
-                className="w-full bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
+                className="w-full bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
               >
                 Zajistit dopravu a kontejnery
               </button>

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'citysound-green': {
+        'CitySound-green': {
           50: '#f0fdf4',
           100: '#dcfce7',
           200: '#bbf7d0',
@@ -16,7 +16,7 @@ export default {
           800: '#166534',
           900: '#14532d',
         },
-        'citysound-red': {
+        'CitySound-red': {
           50: '#fef2f2',
           100: '#fee2e2',
           200: '#fecaca',
@@ -28,7 +28,7 @@ export default {
           800: '#991b1b',
           900: '#7f1d1d',
         },
-        'citysound-blue': {
+        'CitySound-blue': {
           50: '#eff6ff',
           100: '#dbeafe',
           200: '#bfdbfe',

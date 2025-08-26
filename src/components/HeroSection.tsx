@@ -41,21 +41,21 @@ const HeroSection: React.FC = () => {
         <div className="max-w-4xl animate-fade-in">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-black/40 backdrop-blur-md border border-white/30 rounded-full px-4 py-2 mb-6">
-            <CheckCircle size={16} className="text-citysound-green-400" />
+            <CheckCircle size={16} className="text-CitySound-green-400" />
             <span className="text-sm font-medium text-white">Jediní, kdo realizují veřejné osvětlení kompletně</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left">
             Veřejné osvětlení
-            <span className="block text-citysound-green-400">od A do Z</span>
+            <span className="block text-CitySound-green-400">od A do Z</span>
           </h1>
 
           {/* Subheading */}
           <div className="backdrop-blur-md bg-black/40 border border-white/30 rounded-xl p-6 mb-8 max-w-3xl">
             <p className="text-xl md:text-2xl text-white leading-relaxed text-left">
               Zajistíme vše od výkopu a položení sítí až po finální instalaci a revizi. 
-              <strong className="text-citysound-green-300"> Kompletní řešení pro stavební firmy i obce.</strong>
+              <strong className="text-CitySound-green-300"> Kompletní řešení pro stavební firmy i obce.</strong>
             </p>
           </div>
 
@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
               'Dodržujeme termíny'
             ].map((benefit) => (
               <div key={benefit} className="flex items-center space-x-2 bg-black/40 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2">
-                <CheckCircle size={16} className="text-citysound-green-400" />
+                <CheckCircle size={16} className="text-CitySound-green-400" />
                 <span className="text-sm font-medium text-white">{benefit}</span>
               </div>
             ))}
@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={scrollToContact}
-              className="group bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-citysound-red-500/25"
+              className="group bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-CitySound-red-500/25"
             >
               <span className="flex items-center justify-center space-x-2">
                 <span>Nezávazně poptat</span>

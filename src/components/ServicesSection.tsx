@@ -24,7 +24,6 @@ const ServicesSection: React.FC = () => {
       description: 'Specializujeme se na instalaci a údržbu rozhlasových systémů pro obce a veřejné prostory s moderní digitální technologií.',
       benefits: [
         'Digitální rozhlasové systémy',
-        'Krystalově čistý zvuk', 
         'Dálkové ovládání a monitoring',
         'Integrace s varovnými systémy'
       ],
@@ -76,7 +75,7 @@ const ServicesSection: React.FC = () => {
         <div className="mb-16 space-y-16">
           {mainServices.map((service, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="bg-gradient-to-r from-citysound-green-600 to-citysound-green-700 rounded-2xl overflow-hidden shadow-2xl h-[420px]">
+              <div className="bg-gradient-to-r from-CitySound-green-600 to-CitySound-green-700 rounded-2xl overflow-hidden shadow-2xl h-[420px]">
                 <div className={`grid lg:grid-cols-2 gap-0 h-full ${service.imagePosition === 'left' ? 'lg:grid-flow-col-dense' : ''}`}>
                   {/* Content */}
                   <div className={`p-8 lg:p-12 text-white ${service.imagePosition === 'left' ? 'lg:col-start-2' : ''}`}>
@@ -86,7 +85,7 @@ const ServicesSection: React.FC = () => {
                       </div>
                       <h3 className="text-3xl lg:text-4xl font-bold">{service.title}</h3>
                       {service.title === 'Veřejné osvětlení' && (
-                        <span className="bg-citysound-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full ml-auto">
+                        <span className="bg-CitySound-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full ml-auto">
                           Hlavní specializace
                         </span>
                       )}
@@ -99,7 +98,7 @@ const ServicesSection: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
                       {service.benefits.map((benefit, benefitIndex) => (
                         <div key={benefitIndex} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-citysound-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-CitySound-red-400 rounded-full mt-2 flex-shrink-0"></div>
                           <span className="text-green-100 text-sm">{benefit}</span>
                         </div>
                       ))}
@@ -108,7 +107,7 @@ const ServicesSection: React.FC = () => {
                     {service.title === 'Veřejné osvětlení' ? (
                       <Link 
                         to="/verejne-osvetleni"
-                        className="group inline-flex items-center space-x-2 bg-white text-citysound-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+                        className="group inline-flex items-center space-x-2 bg-white text-CitySound-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
                       >
                         <span>Zjistit více</span>
                         <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -123,7 +122,7 @@ const ServicesSection: React.FC = () => {
                       alt={service.title}
                       className="w-full h-full object-cover object-center"
                     />
-                    <div className={`absolute inset-0 ${service.imagePosition === 'left' ? 'bg-gradient-to-r from-transparent to-citysound-green-600/20' : 'bg-gradient-to-l from-transparent to-citysound-green-600/20'}`}></div>
+                    <div className={`absolute inset-0 ${service.imagePosition === 'left' ? 'bg-gradient-to-r from-transparent to-CitySound-green-600/20' : 'bg-gradient-to-l from-transparent to-CitySound-green-600/20'}`}></div>
                   </div>
                 </div>
               </div>
@@ -161,13 +160,13 @@ const ServicesSection: React.FC = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h4 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-citysound-green-600 transition-colors">
+                  <h4 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-CitySound-green-600 transition-colors">
                     {service.title}
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     {service.description}
                   </p>
-                  <div className="flex items-center text-citysound-green-600 text-sm font-medium group-hover:text-citysound-green-700">
+                  <div className="flex items-center text-CitySound-green-600 text-sm font-medium group-hover:text-CitySound-green-700">
                     <span>Zjistit více</span>
                     <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -179,7 +178,7 @@ const ServicesSection: React.FC = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-citysound-green-100">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-CitySound-green-100">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Potřebujete kombinaci více služeb?
             </h3>
@@ -188,7 +187,7 @@ const ServicesSection: React.FC = () => {
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+              className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
             >
               Poptat kombinaci služeb
             </button>

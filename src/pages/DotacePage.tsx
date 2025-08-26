@@ -145,21 +145,21 @@ const DotacePage: React.FC = () => {
       icon: FileText,
       title: 'Projektová a dotační příprava',
       description: 'Zanalyzujeme váš záměr a připravíme veškeré podklady. Zajistíme pasportizaci veřejného osvětlení, energetický posudek a světelně-technický projekt. Ověříme způsobilost a maximalizujeme vaše šance.',
-      color: 'from-citysound-green-500 to-citysound-green-600',
+      color: 'from-CitySound-green-500 to-CitySound-green-600',
       image: '/nove-fotky-vyber-pridat/ikonka1-1krok.png'
     },
     {
       icon: Settings,
       title: 'Žádost a dotační management',
       description: 'Zkompletujeme a podáme žádost o dotaci vaším jménem. Postaráme se o veškerou administrativu a komunikaci s poskytovatelem dotace v průběhu schvalovacího procesu.',
-      color: 'from-citysound-blue-500 to-citysound-blue-600',
+      color: 'from-CitySound-blue-500 to-CitySound-blue-600',
       image: '/nove-fotky-vyber-pridat/ikonka-krok2.png'
     },
     {
       icon: Wrench,
       title: 'Kompletní realizace',
       description: 'Po schválení dotace převezmeme kompletní realizaci. Díky vlastní technice a zkušenému týmu provedeme zemní práce, pokládku kabeláže, montáž sloupů i moderních LED svítidel.',
-      color: 'from-citysound-red-500 to-citysound-red-600',
+      color: 'from-CitySound-red-500 to-CitySound-red-600',
       image: '/nove-fotky-vyber-pridat/ikonka3-krok3.png'
     },
     {
@@ -181,7 +181,7 @@ const DotacePage: React.FC = () => {
       answer: 'Dotace pokrývá 75 % tzv. způsobilých výdajů. Zbylou část lze financovat z rozpočtu obce, případně vám pomůžeme najít možnosti výhodného úvěrování.'
     },
     {
-      question: 'Proč je spojení Citysound a Sunritek pro nás výhodou?',
+      question: 'Proč je spojení CitySound a Sunritek pro nás výhodou?',
       answer: 'Nemusíte koordinovat 3-4 různé firmy (projektanta, dotačního specialistu, realizační firmu...). My jsme jeden partner, jeden kontakt a neseme plnou zodpovědnost za výsledek od začátku do konce. Tím eliminujeme chyby, zpoždění a nedorozumění.'
     },
     {
@@ -231,18 +231,18 @@ const DotacePage: React.FC = () => {
       <section 
         id="hero" 
         data-animate 
-        className={`pt-32 pb-20 bg-gradient-to-br from-citysound-green-50 via-white to-citysound-blue-50 relative overflow-hidden transition-all duration-1000 ${
+        className={`pt-32 pb-20 bg-gradient-to-br from-CitySound-green-50 via-white to-CitySound-blue-50 relative overflow-hidden transition-all duration-1000 ${
           visibleElements.has('hero') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-citysound-green-600 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-citysound-blue-600 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-CitySound-green-600 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-CitySound-blue-600 rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Nová dotační výzva 2025: <span className="text-citysound-green-600">Získejte 75 % na modernizaci veřejného osvětlení</span>
+              Nová dotační výzva 2025: <span className="text-CitySound-green-600">Získejte 75 % na modernizaci veřejného osvětlení</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-4xl mx-auto">
               Připravte svou obec na dotační programy SMARTNET a PUBGRID. Zajistíme pro vás vše od projektu a žádosti až po kompletní realizaci. Bez starostí a na klíč.
@@ -251,20 +251,20 @@ const DotacePage: React.FC = () => {
             {/* Key Benefits */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="w-16 h-16 bg-citysound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Euro className="w-8 h-8 text-citysound-green-600" />
+                <div className="w-16 h-16 bg-CitySound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Euro className="w-8 h-8 text-CitySound-green-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">75% míra dotace</h3>
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="w-16 h-16 bg-citysound-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-citysound-blue-600" />
+                <div className="w-16 h-16 bg-CitySound-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-CitySound-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Vyhlášení Q3 2025</h3>
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="w-16 h-16 bg-citysound-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-citysound-red-600" />
+                <div className="w-16 h-16 bg-CitySound-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-CitySound-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Kompletní servis na klíč</h3>
               </div>
@@ -273,14 +273,14 @@ const DotacePage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+                className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
               >
                 <span>Chci konzultaci k dotaci zdarma</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
             </div>
             <p className="text-gray-600 mt-4">
-              Nebo nám zavolejte: <a href="tel:+420774456960" className="text-citysound-green-600 font-semibold hover:underline">+420 774 456 960</a>
+              Nebo nám zavolejte: <a href="tel:+420774456960" className="text-CitySound-green-600 font-semibold hover:underline">+420 774 456 960</a>
             </p>
           </div>
         </div>
@@ -416,12 +416,12 @@ const DotacePage: React.FC = () => {
               }`}
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <Clock className="w-6 h-6 text-citysound-green-600 mr-3" />
+                <Clock className="w-6 h-6 text-CitySound-green-600 mr-3" />
                 Časový harmonogram a výše podpory
               </h3>
               <div className="space-y-6">
-                <div className="flex items-center p-4 bg-citysound-green-50 rounded-lg">
-                  <div className="w-12 h-12 bg-citysound-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="flex items-center p-4 bg-CitySound-green-50 rounded-lg">
+                  <div className="w-12 h-12 bg-CitySound-green-600 rounded-full flex items-center justify-center text-white font-bold">
                     75%
                   </div>
                   <div className="ml-4">
@@ -429,8 +429,8 @@ const DotacePage: React.FC = () => {
                     <p className="text-sm text-gray-600">způsobilých výdajů</p>
                   </div>
                 </div>
-                <div className="flex items-center p-4 bg-citysound-blue-50 rounded-lg">
-                  <div className="w-12 h-12 bg-citysound-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="flex items-center p-4 bg-CitySound-blue-50 rounded-lg">
+                  <div className="w-12 h-12 bg-CitySound-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                     Q3
                   </div>
                   <div className="ml-4">
@@ -438,8 +438,8 @@ const DotacePage: React.FC = () => {
                     <p className="text-sm text-gray-600">Q3 2025 (červenec - září)</p>
                   </div>
                 </div>
-                <div className="flex items-center p-4 bg-citysound-red-50 rounded-lg">
-                  <div className="w-12 h-12 bg-citysound-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="flex items-center p-4 bg-CitySound-red-50 rounded-lg">
+                  <div className="w-12 h-12 bg-CitySound-red-600 rounded-full flex items-center justify-center text-white font-bold">
                     Q4
                   </div>
                   <div className="ml-4">
@@ -468,7 +468,7 @@ const DotacePage: React.FC = () => {
               }`}
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <CheckCircle className="w-6 h-6 text-citysound-green-600 mr-3" />
+                <CheckCircle className="w-6 h-6 text-CitySound-green-600 mr-3" />
                 Na co lze dotaci využít?
               </h3>
               <div className="space-y-4">
@@ -482,7 +482,7 @@ const DotacePage: React.FC = () => {
                   'Administrace výběrového řízení a dotační management'
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-citysound-green-500 flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-5 h-5 text-CitySound-green-500 flex-shrink-0 mt-1" />
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -511,24 +511,24 @@ const DotacePage: React.FC = () => {
               Jeden partner, kompletní expertiza. Žádní subdodavatelé.
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Spojili jsme síly, abychom vám nabídli službu, která na trhu nemá obdoby. My v Citysound projekt fyzicky zrealizujeme vlastní technikou. Experti ze Sunritek zajistí bezchybnou projektovou a administrativní přípravu.
+              Spojili jsme síly, abychom vám nabídli službu, která na trhu nemá obdoby. My v CitySound projekt fyzicky zrealizujeme vlastní technikou. Experti ze Sunritek zajistí bezchybnou projektovou a administrativní přípravu.
             </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Citysound */}
+            {/* CitySound */}
             <div 
-              id="citysound-card" 
+              id="CitySound-card" 
               data-animate 
-              className={`bg-gradient-to-br from-citysound-green-50 to-citysound-green-100 rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-500 hover:shadow-2xl hover:scale-105 ${
-                visibleElements.has('citysound-card') ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-10 -rotate-3'
+              className={`bg-gradient-to-br from-CitySound-green-50 to-CitySound-green-100 rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-500 hover:shadow-2xl hover:scale-105 ${
+                visibleElements.has('CitySound-card') ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-10 -rotate-3'
               }`}
             >
               <div className="text-center mb-6">
-                <div className="w-20 h-20 bg-citysound-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-CitySound-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Wrench className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">Citysound.cz – Síla v realizaci</h3>
+                <h3 className="text-2xl font-bold text-gray-800">CitySound.cz – Síla v realizaci</h3>
               </div>
               <div className="space-y-4">
                 {[
@@ -538,7 +538,7 @@ const DotacePage: React.FC = () => {
                   'Garance termínů a kvality provedení'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-citysound-green-600" />
+                    <CheckCircle className="w-5 h-5 text-CitySound-green-600" />
                     <span className="text-gray-700 font-medium">{item}</span>
                   </div>
                 ))}
@@ -549,12 +549,12 @@ const DotacePage: React.FC = () => {
             <div 
               id="sunritek-card" 
               data-animate 
-              className={`bg-gradient-to-br from-citysound-blue-50 to-citysound-blue-100 rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-700 hover:shadow-2xl hover:scale-105 ${
+              className={`bg-gradient-to-br from-CitySound-blue-50 to-CitySound-blue-100 rounded-2xl p-8 shadow-lg transition-all duration-1000 delay-700 hover:shadow-2xl hover:scale-105 ${
                 visibleElements.has('sunritek-card') ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 translate-x-10 rotate-3'
               }`}
             >
               <div className="text-center mb-6">
-                <div className="w-20 h-20 bg-citysound-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-CitySound-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FileText className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800">Sunritek s.r.o. – Jistota v přípravě</h3>
@@ -567,7 +567,7 @@ const DotacePage: React.FC = () => {
                   { label: 'Optimalizace (KEPS):', desc: 'Analýza sazeb a poradenství od energetického specialisty.' }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-citysound-blue-600 flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-5 h-5 text-CitySound-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <span className="text-gray-800 font-semibold">{item.label}</span>
                       <span className="text-gray-700"> {item.desc}</span>
@@ -584,7 +584,7 @@ const DotacePage: React.FC = () => {
       <section 
         id="reference-section" 
         data-animate 
-        className={`py-20 bg-gradient-to-r from-citysound-green-600 to-citysound-blue-600 transition-all duration-1000 ${
+        className={`py-20 bg-gradient-to-r from-CitySound-green-600 to-CitySound-blue-600 transition-all duration-1000 ${
           visibleElements.has('reference-section') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
         <div className="container mx-auto px-4 lg:px-8">
@@ -628,7 +628,7 @@ const DotacePage: React.FC = () => {
                   </p>
                 </div>
                 <blockquote className="border-l-4 border-white/50 pl-4 italic text-lg">
-                  "Díky komplexnímu přístupu Citysound byl celý proces získání dotace a následné realizace nečekaně hladký. Ušetřili nám obrovské množství času a starostí a výsledek je perfektní."
+                  "Díky komplexnímu přístupu CitySound byl celý proces získání dotace a následné realizace nečekaně hladký. Ušetřili nám obrovské množství času a starostí a výsledek je perfektní."
                   <footer className="text-sm mt-2 opacity-80">— Starosta obce Oznice</footer>
                 </blockquote>
               </div>
@@ -674,9 +674,9 @@ const DotacePage: React.FC = () => {
                 >
                   <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
                   {openFAQ === index ? (
-                    <ChevronUp className="w-6 h-6 text-citysound-green-600" />
+                    <ChevronUp className="w-6 h-6 text-CitySound-green-600" />
                   ) : (
-                    <ChevronDown className="w-6 h-6 text-citysound-green-600" />
+                    <ChevronDown className="w-6 h-6 text-CitySound-green-600" />
                   )}
                 </button>
                 {openFAQ === index && (
@@ -728,7 +728,7 @@ const DotacePage: React.FC = () => {
               
               {isSubmitted ? (
                 <div className="text-center py-12">
-                  <CheckCircle className="w-16 h-16 text-citysound-green-600 mx-auto mb-4" />
+                  <CheckCircle className="w-16 h-16 text-CitySound-green-600 mx-auto mb-4" />
                   <h4 className="text-xl font-bold text-gray-800 mb-2">Děkujeme za vaši poptávku!</h4>
                   <p className="text-gray-600">Ozveme se vám do 24 hodin s nezávaznou konzultací.</p>
                 </div>
@@ -745,7 +745,7 @@ const DotacePage: React.FC = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                       placeholder="Jan Novák"
                     />
                   </div>
@@ -761,7 +761,7 @@ const DotacePage: React.FC = () => {
                       value={formData.city}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                       placeholder="Název obce nebo města"
                     />
                   </div>
@@ -778,7 +778,7 @@ const DotacePage: React.FC = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="jan@obec.cz"
                       />
                     </div>
@@ -792,7 +792,7 @@ const DotacePage: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                         placeholder="+420 123 456 789"
                       />
                     </div>
@@ -808,14 +808,14 @@ const DotacePage: React.FC = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-citysound-green-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-CitySound-green-500 focus:border-transparent transition-colors"
                       placeholder="Stručně popište váš záměr nebo případné otázky..."
                     ></textarea>
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full bg-citysound-red-600 hover:bg-citysound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+                    className="w-full bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 flex items-center justify-center space-x-2"
                   >
                     <Send size={20} />
                     <span>Odeslat poptávku</span>
@@ -842,12 +842,12 @@ const DotacePage: React.FC = () => {
               
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-citysound-green-100 rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-citysound-green-600" />
+                  <div className="w-12 h-12 bg-CitySound-green-100 rounded-full flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-CitySound-green-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Zavolejte nám</h4>
-                    <a href="tel:+420774456960" className="text-lg font-medium text-citysound-green-600 hover:text-citysound-green-700">
+                    <a href="tel:+420774456960" className="text-lg font-medium text-CitySound-green-600 hover:text-CitySound-green-700">
                       +420 774 456 960
                     </a>
                     <p className="text-sm text-gray-600">Po-Pá: 7:00-16:00</p>
@@ -857,22 +857,22 @@ const DotacePage: React.FC = () => {
               
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-citysound-blue-100 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-citysound-blue-600" />
+                  <div className="w-12 h-12 bg-CitySound-blue-100 rounded-full flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-CitySound-blue-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Napište nám</h4>
-                    <a href="mailto:dotace@citysound.cz" className="text-lg font-medium text-citysound-blue-600 hover:text-citysound-blue-700">
-                      dotace@citysound.cz
+                    <a href="mailto:citysound@citysound.cz" className="text-lg font-medium text-CitySound-blue-600 hover:text-CitySound-blue-700">
+                      citysound@citysound.cz
                     </a>
                     <p className="text-sm text-gray-600">Odpovídáme do 24 hodin</p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-citysound-green-50 rounded-xl p-6 border border-citysound-green-200">
-                <h4 className="font-bold text-citysound-green-800 mb-2">Začněte ještě dnes!</h4>
-                <p className="text-citysound-green-700">
+              <div className="bg-CitySound-green-50 rounded-xl p-6 border border-CitySound-green-200">
+                <h4 className="font-bold text-CitySound-green-800 mb-2">Začněte ještě dnes!</h4>
+                <p className="text-CitySound-green-700">
                   Příprava kvalitního dotačního projektu trvá několik měsíců. Čím dříve začneme, tím lepší šanci na úspěch budete mít.
                 </p>
               </div>

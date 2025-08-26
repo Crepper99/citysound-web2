@@ -29,16 +29,16 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-6 hover:opacity-80 transition-opacity duration-200">
-              <div className="w-10 h-10 bg-citysound-green-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-CitySound-green-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">CS</span>
               </div>
-              <span className="text-xl font-bold">Citysound</span>
+              <span className="text-xl font-bold">CitySound</span>
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Komplexní realizace veřejného osvětlení od A do Z. Spolehlivý partner 
               pro stavební firmy i obce po celé České republice.
             </p>
-            <div className="flex items-center space-x-2 text-citysound-green-400">
+            <div className="flex items-center space-x-2 text-CitySound-green-400">
               <span className="text-2xl font-bold">20+</span>
               <span className="text-sm">let zkušeností</span>
             </div>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <Link
                     to={service.href}
-                    className="text-gray-300 hover:text-citysound-green-400 transition-colors duration-200"
+                    className="text-gray-300 hover:text-CitySound-green-400 transition-colors duration-200"
                   >
                     {service.name}
                   </Link>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-gray-300 hover:text-citysound-green-400 transition-colors duration-200"
+                    className="text-gray-300 hover:text-CitySound-green-400 transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -88,18 +88,18 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6">Kontakt</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-citysound-green-400 mt-0.5" />
+                <Phone className="w-5 h-5 text-CitySound-green-400 mt-0.5" />
                 <div>
                   <a
                     href="tel:+420774456960"
-                    className="text-gray-300 hover:text-citysound-green-400 transition-colors"
+                    className="text-gray-300 hover:text-CitySound-green-400 transition-colors"
                   >
                     +420 774 456 960
                   </a>
                   <p className="text-xs text-gray-400">Po-Pá: 7:00-16:00</p>
                   <a
                     href="tel:+420722113729"
-                    className="text-gray-300 hover:text-citysound-green-400 transition-colors text-sm mt-1 block"
+                    className="text-gray-300 hover:text-CitySound-green-400 transition-colors text-sm mt-1 block"
                   >
                     +420 722 113 729 (servisní)
                   </a>
@@ -107,11 +107,11 @@ const Footer: React.FC = () => {
               </div>
               
               <div className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-citysound-green-400 mt-0.5" />
+                <Mail className="w-5 h-5 text-CitySound-green-400 mt-0.5" />
                 <div>
                   <a
                     href="mailto:citysound@citysound.cz"
-                    className="text-gray-300 hover:text-citysound-green-400 transition-colors"
+                    className="text-gray-300 hover:text-CitySound-green-400 transition-colors"
                   >
                     citysound@citysound.cz
                   </a>
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
               </div>
               
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-citysound-green-400 mt-0.5" />
+                <MapPin className="w-5 h-5 text-CitySound-green-400 mt-0.5" />
                 <div>
                   <span className="text-gray-300">
                     Hranická 272<br />
@@ -133,18 +133,18 @@ const Footer: React.FC = () => {
               <div className="mt-6 pt-6 border-t border-gray-700">
                 <div className="flex items-center space-x-4">
                   <a
-                    href="https://www.facebook.com/citysoundsro"
+                    href="https://www.facebook.com/CitySoundSRO"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-citysound-green-400 transition-colors"
+                    className="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-CitySound-green-400 transition-colors"
                   >
                     <Facebook size={24} />
                   </a>
                   <a
-                    href="https://www.instagram.com/_citysound_"
+                    href="https://www.instagram.com/_CitySound_"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-citysound-green-400 transition-colors"
+                    className="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-CitySound-green-400 transition-colors"
                   >
                     <Instagram size={24} />
                   </a>
@@ -160,13 +160,13 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Citysound.cz - Všechna práva vyhrazena
+              © {currentYear} CitySound.cz - Všechna práva vyhrazena
             </p>
             <div className="flex space-x-6 text-sm">
-              <Link to="/kontakt" className="text-gray-400 hover:text-citysound-green-400 transition-colors">
+              <Link to="/kontakt" className="text-gray-400 hover:text-CitySound-green-400 transition-colors">
                 Ochrana osobních údajů
               </Link>
-              <Link to="/kontakt" className="text-gray-400 hover:text-citysound-green-400 transition-colors">
+              <Link to="/kontakt" className="text-gray-400 hover:text-CitySound-green-400 transition-colors">
                 Obchodní podmínky
               </Link>
             </div>

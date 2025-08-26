@@ -15,8 +15,8 @@ const ReferencesSection: React.FC = () => {
   const municipalities = [
     { name: 'Prostřední Bečva', logoPath: '/loga%20obce/prostredni-becva.svg' },
     { name: 'Hutisko Solanec', logoPath: '/loga%20obce/Hutiskos.jpg', hasEmblem: true },
-    { name: 'Juřinka', logoPath: '/loga%20obce/jurinka.jpg', hasEmblem: true },
-    { name: 'Valašské Meziříčí', logoPath: '/loga%20obce/Pro%20obrazovka-logo-valmez-pozitiv.png' },
+    { name: 'Troubky', logoPath: '/loga%20obce/troubky.png', hasEmblem: true },
+    { name: 'Valašské Meziříčí', logoPath: '/loga%20obce/valmez-logo.png' },
     { name: 'Nový Hrozenkov', logoPath: '/loga%20obce/novy%20hrozenkov.jpg', hasEmblem: true },
     { name: 'Líšnice', logoPath: '/loga%20obce/lisnice2.png', hasEmblem: true }
   ];
@@ -50,29 +50,29 @@ const ReferencesSection: React.FC = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div className="text-center animate-scale-in" style={{ animationDelay: '0s' }}>
-            <div className="w-16 h-16 bg-citysound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Building2 className="w-8 h-8 text-citysound-green-600" />
+            <div className="w-16 h-16 bg-CitySound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Building2 className="w-8 h-8 text-CitySound-green-600" />
             </div>
             <div ref={counter1.elementRef} className="text-3xl font-bold text-gray-800 mb-1">{counter1.displayValue}</div>
             <div className="text-gray-600 text-sm">{stats[0].label}</div>
           </div>
           <div className="text-center animate-scale-in" style={{ animationDelay: '0.1s' }}>
-            <div className="w-16 h-16 bg-citysound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MapPin className="w-8 h-8 text-citysound-green-600" />
+            <div className="w-16 h-16 bg-CitySound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <MapPin className="w-8 h-8 text-CitySound-green-600" />
             </div>
             <div ref={counter2.elementRef} className="text-3xl font-bold text-gray-800 mb-1">{counter2.displayValue}</div>
             <div className="text-gray-600 text-sm">{stats[1].label}</div>
           </div>
           <div className="text-center animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="w-16 h-16 bg-citysound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-citysound-green-600" />
+            <div className="w-16 h-16 bg-CitySound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Users className="w-8 h-8 text-CitySound-green-600" />
             </div>
             <div ref={counter3.elementRef} className="text-3xl font-bold text-gray-800 mb-1">{counter3.displayValue}</div>
             <div className="text-gray-600 text-sm">{stats[2].label}</div>
           </div>
           <div className="text-center animate-scale-in" style={{ animationDelay: '0.3s' }}>
-            <div className="w-16 h-16 bg-citysound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Award className="w-8 h-8 text-citysound-green-600" />
+            <div className="w-16 h-16 bg-CitySound-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Award className="w-8 h-8 text-CitySound-green-600" />
             </div>
             <div ref={counter4.elementRef} className="text-3xl font-bold text-gray-800 mb-1">{counter4.displayValue}</div>
             <div className="text-gray-600 text-sm">{stats[3].label}</div>
@@ -83,7 +83,7 @@ const ReferencesSection: React.FC = () => {
           {/* Construction Companies */}
           <div className="animate-slide-up">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-              <Building2 className="w-6 h-6 text-citysound-green-600 mr-3" />
+              <Building2 className="w-6 h-6 text-CitySound-green-600 mr-3" />
               Stavební firmy
             </h3>
             <div className="bg-white rounded-xl p-8 shadow-lg">
@@ -94,7 +94,7 @@ const ReferencesSection: React.FC = () => {
                     className="group cursor-pointer"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-citysound-green-50 transition-colors duration-300 p-4">
+                    <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-CitySound-green-50 transition-colors duration-300 p-4">
                       <div className="logo-container">
                         <img
                           src={company.logoPath}
@@ -115,7 +115,7 @@ const ReferencesSection: React.FC = () => {
           {/* Municipalities */}
           <div className="animate-slide-up">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-              <MapPin className="w-6 h-6 text-citysound-green-600 mr-3" />
+              <MapPin className="w-6 h-6 text-CitySound-green-600 mr-3" />
               Města a obce
             </h3>
             <div className="bg-white rounded-xl p-8 shadow-lg">
@@ -126,7 +126,7 @@ const ReferencesSection: React.FC = () => {
                     className="group cursor-pointer"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-citysound-green-50 transition-colors duration-300 p-4">
+                    <div className="h-20 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-CitySound-green-50 transition-colors duration-300 p-4">
                       <div className="logo-container">
                         {municipality.hasEmblem ? (
                           <div className="flex flex-col items-center space-y-1">
@@ -160,10 +160,10 @@ const ReferencesSection: React.FC = () => {
 
         {/* Trust Badge */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center space-x-3 bg-citysound-green-100 rounded-full px-6 py-3">
-            <Award className="w-5 h-5 text-citysound-green-600" />
-            <span className="text-citysound-green-800 font-semibold">
-              Certifikovaní elektrikáři s oprávněním pro revize
+          <div className="inline-flex items-center space-x-3 bg-CitySound-green-100 rounded-full px-6 py-3">
+            <Award className="w-5 h-5 text-CitySound-green-600" />
+            <span className="text-CitySound-green-800 font-semibold">
+              Certifikovaní elektrikáři s odbornou způsobilostí
             </span>
           </div>
         </div>
