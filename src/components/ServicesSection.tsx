@@ -116,7 +116,10 @@ const ServicesSection: React.FC = () => {
                   </div>
 
                   {/* Image */}
-                  <div className={`relative flex items-center ${service.imagePosition === 'left' ? 'lg:col-start-1' : ''}`} style={{ transform: 'translateY(-10%)' }}>
+                  <div
+                    className={`relative flex items-center ${service.imagePosition === 'left' ? 'lg:col-start-1' : ''}`}
+                    style={service.title === 'Veřejné osvětlení' ? { transform: 'translateY(-10%)' } : {}}
+                  >
                     <img
                       src={service.image}
                       alt={service.title}
