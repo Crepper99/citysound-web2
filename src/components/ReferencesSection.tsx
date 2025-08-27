@@ -184,7 +184,7 @@ const ReferencesSection: React.FC = () => {
               '/nove-fotky-vyber-pridat/Osvětlení multifunkčního hřiště, Prostřední bečva, 2024 .jpg',
               '/nove-fotky-vyber-pridat/Výstavba VO, Líšnice, 2024.jpg',
               '/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg',
-              '/nove-fotky-vyber-pridat/Rozšíření VO, Kateřinice, 2023.jpg',
+              '/work/20250511_213123.jpg',
               '/nove-fotky-vyber-pridat/Výstavba VO zanádražní prostor, Vsetín, 2023.jpg',
               '/nove-fotky-vyber-pridat/Výměna_VO,_Valašské_Meziříčí,_2025.jpg',
               '/nove-fotky-vyber-pridat/Výstavba bezbariérový chodník, Hutisko Solanec VO, 2022 .jpg',
