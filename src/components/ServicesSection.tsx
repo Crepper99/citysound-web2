@@ -14,7 +14,7 @@ const ServicesSection: React.FC = () => {
         'Moderní LED technologie',
         'Komplexní servis a údržba'
       ],
-      image: '/nove-fotky-vyber-pridat/Montáž Osvětlení.jpg',
+      image: '/work/20250511_213123.jpg',
       highlight: true,
       imagePosition: 'right'
     },
