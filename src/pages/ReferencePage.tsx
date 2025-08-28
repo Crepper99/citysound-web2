@@ -130,7 +130,7 @@ const ReferencePage: React.FC = () => {
       client: 'Continental Frenštát pod Radhoštěm',
       location: 'Frenštát pod Radhoštěm',
       year: '2024',
-      category: 'Průmyslové osvětlení',
+      category: 'Zemní práce',
       image: '/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg',
       images: ['/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg'],
       description: 'Realizace nových NN a datových rozvodů v průmyslovém areálu.',
