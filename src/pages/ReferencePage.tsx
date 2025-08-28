@@ -43,8 +43,8 @@ const ReferencePage: React.FC = () => {
     {
       id: '2',
       title: 'Osvětlení prodejny firmy Colleman',
-      client: 'Colleman s.r.o.',
-      location: 'Ostrava',
+      client: 'Coleman S.I., a.s.',
+      location: 'Ostrava - Třebovice',
       year: '2020',
       category: 'Průmyslové osvětlení',
       image: '/nove-fotky-vyber-pridat/Osvětlení prodejny firmy Colleman, Ostrava, 2020.jpg',
