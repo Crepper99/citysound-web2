@@ -138,7 +138,7 @@ const ReferencePage: React.FC = () => {
     }
   ];
 
-  const categories = ['Všechny', 'Veřejné osvětlení', 'Zemní práce', 'Práce s plošinou', 'Kontejnery', 'Montáž radarů'];
+  const categories = ['Všechny', 'Veřejné osvětlení', 'Průmyslové osvětlení', 'Zemní práce', 'Kontejnery', 'Montáž radarů'];
 
   const filteredProjects = activeFilter === 'Všechny' 
     ? projects 
