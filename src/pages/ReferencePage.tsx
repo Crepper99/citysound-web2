@@ -127,7 +127,7 @@ const ReferencePage: React.FC = () => {
     {
       id: '9',
       title: 'NN a datové rozvody',
-      client: 'Continental Frenštát p.R.',
+      client: 'Continental Frenštát pod Radhoštěm',
       location: 'Frenštát pod Radhoštěm',
       year: '2024',
       category: 'Průmyslové osvětlení',
