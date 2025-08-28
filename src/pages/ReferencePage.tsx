@@ -134,7 +134,7 @@ const ReferencePage: React.FC = () => {
       image: '/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg',
       images: ['/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg'],
       description: 'Realizace nových NN a datových rozvodů v průmyslovém areálu.',
-      projectType: 'Průmyslové osvětlení'
+      projectType: 'Zemní práce'
     }
   ];
 
