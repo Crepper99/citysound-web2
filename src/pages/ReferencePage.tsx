@@ -42,7 +42,7 @@ const ReferencePage: React.FC = () => {
     },
     {
       id: '2',
-      title: 'Osvětlení prodejny firmy Colleman',
+      title: 'Osvětlení prodejny firmy Coleman S.I.',
       client: 'Coleman S.I., a.s.',
       location: 'Ostrava - Třebovice',
       year: '2020',
