@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1",
+    "title": "Osvětlení multifunkčního hřiště",
+    "client": "Obec Prostřední Bečva",
+    "location": "Prostřední Bečva",
+    "year": "2024",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Osvětlení multifunkčního hřiště, Prostřední bečva, 2024 .jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Osvětlení multifunkčního hřiště, Prostřední bečva, 2024 .jpg"
+    ],
+    "description": "Instalace moderního a úsporného osvětlení pro multifunkční hřiště.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "2",
+    "title": "Osvětlení prodejny firmy Coleman S.I.",
+    "client": "Coleman S.I., a.s.",
+    "location": "Ostrava - Třebovice",
+    "year": "2020",
+    "category": "Průmyslové osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Osvětlení prodejny firmy Colleman, Ostrava, 2020.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Osvětlení prodejny firmy Colleman, Ostrava, 2020.jpg"
+    ],
+    "description": "Kompletní návrh a realizace osvětlení prodejních prostor.",
+    "projectType": "Průmyslové osvětlení"
+  },
+  {
+    "id": "3",
+    "title": "Rozšíření veřejného osvětlení",
+    "client": "Obec Kateřinice",
+    "location": "Kateřinice",
+    "year": "2023",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Rozšíření VO, Kateřinice, 2023.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Rozšíření VO, Kateřinice, 2023.jpg"
+    ],
+    "description": "Rozšíření sítě veřejného osvětlení do nových částí obce.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "4",
+    "title": "Výměna rozvaděče veřejného osvětlení",
+    "client": "Obec Prostřední Bečva",
+    "location": "Prostřední Bečva",
+    "year": "2021",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Výměna rozvaděče VO, Prostřední Bečva, 2021.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Výměna rozvaděče VO, Prostřední Bečva, 2021.jpg"
+    ],
+    "description": "Modernizace a výměna hlavního rozvaděče pro veřejné osvětlení.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "5",
+    "title": "Výměna veřejného osvětlení",
+    "client": "Město Valašské Meziříčí",
+    "location": "Valašské Meziříčí",
+    "year": "2025",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Výměna_VO,_Valašské_Meziříčí,_2025.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Výměna_VO,_Valašské_Meziříčí,_2025.jpg"
+    ],
+    "description": "Kompletní výměna zastaralého veřejného osvětlení za moderní LED technologii.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "6",
+    "title": "Výstavba bezbariérového chodníku a VO",
+    "client": "Obec Hutisko-Solanec",
+    "location": "Hutisko-Solanec",
+    "year": "2022",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Výstavba bezbariérový chodník, Hutisko Solanec VO, 2022 .jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Výstavba bezbariérový chodník, Hutisko Solanec VO, 2022 .jpg"
+    ],
+    "description": "Výstavba nového veřejného osvětlení podél bezbariérového chodníku.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "7",
+    "title": "Výstavba VO v zanádražním prostoru",
+    "client": "Město Vsetín",
+    "location": "Vsetín",
+    "year": "2023",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Výstavba VO zanádražní prostor, Vsetín, 2023.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Výstavba VO zanádražní prostor, Vsetín, 2023.jpg"
+    ],
+    "description": "Nové osvětlení pro zvýšení bezpečnosti v prostoru u nádraží.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "8",
+    "title": "Výstavba veřejného osvětlení",
+    "client": "Obec Líšnice",
+    "location": "Líšnice",
+    "year": "2024",
+    "category": "Veřejné osvětlení",
+    "image": "/nove-fotky-vyber-pridat/Výstavba VO, Líšnice, 2024.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/Výstavba VO, Líšnice, 2024.jpg"
+    ],
+    "description": "Kompletní výstavba nového veřejného osvětlení v obci.",
+    "projectType": "Veřejné osvětlení"
+  },
+  {
+    "id": "9",
+    "title": "NN a datové rozvody",
+    "client": "Continental Frenštát pod Radhoštěm",
+    "location": "Frenštát pod Radhoštěm",
+    "year": "2024",
+    "category": "Zemní práce",
+    "image": "/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg",
+    "images": [
+      "/nove-fotky-vyber-pridat/NN rozvody, Datové rozvody Continental Frenštát p.R. , 2024.jpg"
+    ],
+    "description": "Realizace nových NN a datových rozvodů v průmyslovém areálu.",
+    "projectType": "Zemní práce"
+  }
+]

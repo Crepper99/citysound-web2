@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import ContactSection from '../components/ContactSection';
@@ -55,40 +55,22 @@ const PublicLightingPage: React.FC = () => {
     'Zajistíme dlouhou životnost a minimální náklady na provoz'
   ];
 
-  const projects = [
-    {
-      title: 'Rekonstrukce VO, Rožnov pod Radhoštěm, 2024',
-      image: '/work/20241115_112046.jpg'
-    },
-    {
-      title: 'Nové osvětlení, Brno - Líšeň, 2024',
-      image: '/work/20250511_212135.jpg'
-    },
-    {
-      title: 'LED modernizace, Ostrava centrum, 2023',
-      image: '/work/20220530_143714.jpg'
-    },
-    {
-      title: 'Veřejné osvětlení, Praha - Vinohrady, 2023',
-      image: '/work/20250511_211440.jpg'
-    },
-    {
-      title: 'Parkové osvětlení, Pardubice, 2023',
-      image: '/work/20250226_091248.jpg'
-    },
-    {
-      title: 'Přechody pro chodce, Plzeň, 2024',
-      image: '/work/20250412_091130.jpg'
-    },
-    {
-      title: 'Rekonstrukce náměstí, Hradec Králové, 2022',
-      image: '/work/20210107_150459.jpg'
-    },
-    {
-      title: 'Nová výstavba, České Budějovice, 2024',
-      image: '/work/20250511_205703.jpg'
-    }
-  ];
+  type GalleryProject = { title: string; image: string };
+  const [projects, setProjects] = useState<GalleryProject[]>([]);
+
+  // Load first 8 projects from shared JSON for the gallery preview
+  useEffect(() => {
+    fetch('/data/projects.json')
+      .then((res) => res.json())
+      .then((allProjects: Array<{ title: string; image: string; location: string; year: string }>) => {
+        const gallery: GalleryProject[] = allProjects
+          .filter((p) => !!p.image)
+          .slice(0, 8)
+          .map((p) => ({ title: `${p.title}, ${p.location}, ${p.year}`.trim(), image: p.image }));
+        setProjects(gallery);
+      })
+      .catch((err) => console.error('Chyba při načítání projects.json', err));
+  }, []);
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
