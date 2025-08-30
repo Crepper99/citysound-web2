@@ -87,49 +87,49 @@ const PublicLightingPage: React.FC = () => {
             {/* Left Content */}
             <div className="max-w-4xl">
               <div className="mb-8">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 animate-fade-in-up">
-                  Komplexní realizace <span className="text-CitySound-green-600">
-                    veřejného osvětlení
-                  </span>
-                </h1>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl animate-fade-in-up animation-delay-200">
-                  Pro stavební firmy a obce zajišťujeme kompletní dodávku veřejného osvětlení – 
-                  od prvního výkopu až po finální revizi. S námi získáte jediného spolehlivého 
-                  partnera pro celý projekt a ušetříte čas i náklady.
-                </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 animate-fade-in-up">
+            Komplexní realizace <span className="text-CitySound-green-600">
+              veřejného osvětlení
+            </span>
+          </h1>
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl animate-fade-in-up animation-delay-200">
+            Pro stavební firmy a obce zajišťujeme kompletní dodávku veřejného osvětlení – 
+            od prvního výkopu až po finální revizi. S námi získáte jediného spolehlivého 
+            partnera pro celý projekt a ušetříte čas i náklady.
+          </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-400">
-                <button
-                  onClick={scrollToContact}
-                  className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
-                >
-                  <span className="flex items-center justify-center space-x-2">
-                    <Lightbulb className="w-5 h-5 group-hover:animate-pulse" />
-                    <span>Chci nezávaznou konzultaci</span>
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </button>
-                <Link to="/reference">
-                  <button className="border-2 border-CitySound-green-600 text-CitySound-green-600 hover:bg-CitySound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-                    Prohlédnout reference
-                  </button>
-                </Link>
+          <button
+            onClick={scrollToContact}
+            className="bg-CitySound-red-600 hover:bg-CitySound-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+          >
+            <span className="flex items-center justify-center space-x-2">
+              <Lightbulb className="w-5 h-5 group-hover:animate-pulse" />
+              <span>Chci nezávaznou konzultaci</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </button>
+          <Link to="/reference">
+            <button className="border-2 border-CitySound-green-600 text-CitySound-green-600 hover:bg-CitySound-green-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+              Prohlédnout reference
+            </button>
+          </Link>
               </div>
             </div>
             {/* Right Visual */}
-            <div className="relative max-w-xl mx-auto w-full">
+            <div className="relative max-w-2xl mx-auto w-full">
               {/* Ambient glow */}
-              <div className="absolute -z-10 -top-10 -left-10 h-56 w-56 bg-CitySound-green-400/30 rounded-full blur-3xl"></div>
-              <div className="absolute -z-10 -bottom-10 -right-10 h-64 w-64 bg-CitySound-blue-400/30 rounded-full blur-3xl"></div>
+              <div className="absolute -z-10 -top-10 -left-10 h-72 w-72 bg-CitySound-green-400/30 rounded-full blur-3xl"></div>
+              <div className="absolute -z-10 -bottom-10 -right-10 h-80 w-80 bg-CitySound-blue-400/30 rounded-full blur-3xl"></div>
 
               {/* Transparent image with natural drop shadow (no card/border) */}
               <img
-                src="/work/citysound-verejne-osvetleni.png"
-                alt="Veřejné osvětlení – ukázka realizace CitySound"
-                className="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl"
+          src="/work/citysound-verejne-osvetleni.png"
+          alt="Veřejné osvětlení – ukázka realizace CitySound"
+          className="w-full h-auto max-h-[700px] object-contain drop-shadow-2xl"
               />
               {/* Ground shadow for natural depth */}
-              <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 w-3/4 h-10 bg-black/20 blur-xl rounded-full"></div>
+              <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 w-3/4 h-12 bg-black/20 blur-xl rounded-full"></div>
             </div>
           </div>
         </div>
