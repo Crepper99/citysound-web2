@@ -125,7 +125,7 @@ const PublicLightingPage: React.FC = () => {
               {/* Image card with natural shadowbox */}
               <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 bg-white">
                 <img
-                  src="/citysound-verejne-osvetleni.png"
+                  src="/work/citysound-verejne-osvetleni.png"
                   alt="Veřejné osvětlení – ukázka realizace CitySound"
                   className="w-full h-auto object-cover"
                 />
