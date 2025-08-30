@@ -122,14 +122,12 @@ const PublicLightingPage: React.FC = () => {
               <div className="absolute -z-10 -top-10 -left-10 h-56 w-56 bg-CitySound-green-400/30 rounded-full blur-3xl"></div>
               <div className="absolute -z-10 -bottom-10 -right-10 h-64 w-64 bg-CitySound-blue-400/30 rounded-full blur-3xl"></div>
 
-              {/* Image card with natural shadowbox */}
-              <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 bg-white">
-                <img
-                  src="/work/citysound-verejne-osvetleni.png"
-                  alt="Veřejné osvětlení – ukázka realizace CitySound"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
+              {/* Transparent image with natural drop shadow (no card/border) */}
+              <img
+                src="/work/citysound-verejne-osvetleni.png"
+                alt="Veřejné osvětlení – ukázka realizace CitySound"
+                className="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl"
+              />
               {/* Ground shadow for natural depth */}
               <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 w-3/4 h-10 bg-black/20 blur-xl rounded-full"></div>
             </div>
